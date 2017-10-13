@@ -1,0 +1,20 @@
+<template name="application">
+	{{> navbarTemplate}}
+	{{> Template.dynamic template=main}}
+</template>
+
+<template name="navbarTemplate">
+    <div class="navbar-top clearfix">
+    	<div class="menu-item-container">
+    		<button class='btn menu-button'>About</button>
+			<button class='btn menu-button'>Features</button>
+			<button class='btn menu-button'>Pricing</button>
+    	</div>
+		<div class="signup-container">
+			<button class='btn menu-button'>Register</button>
+			<button class='btn menu-button'>Log In</button>
+		</div>
+	</div>
+</template>
+
+

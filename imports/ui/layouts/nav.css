@@ -1,0 +1,117 @@
+.navbar-top {
+  height: 60px;
+  background: rgba(0,0,0,0.0);
+  width: 100%;
+  position: fixed;
+  z-index: 900;
+  top: 0
+}
+
+.applogo {
+	width: 150px;
+	height: 60px;
+	color: var(--primary-yellow);
+	position: relative;
+	padding: 19px 0 0 0px;
+	float: left;
+	text-align: center
+}
+
+.applogo .logo {
+	color: var(--primary-yellow);
+	font-size: 20px;
+
+  font-weight: 400 !important;
+  font-family: 'ProximaNova-Regular', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: none !important;
+}
+
+.applogo .logo span {
+  color: #FFF;
+  font-size: 20px;
+
+  font-weight: 400 !important;
+  font-family: 'ProximaNova-Regular', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: none !important;
+}
+
+.menu-img{
+  width: 30px;
+  height: 30px;
+  margin: auto;
+
+  object-fit: cover;
+  margin-top: 15px;
+}
+
+.menu-item-container {
+  float: left;
+  display: flex;
+  height: 100% !important;
+  color: var(--primary-yellow);
+  padding-right: 20px;
+  padding-left: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  margin: 0 !important;
+
+  font-weight: 500;
+  font-size: 15px;
+  font-family: 'ProximaNova-Regular', sans-serif !important;
+}
+
+.signup-container {
+  float: right;
+  display: flex;
+  height: 100% !important;
+  color: var(--primary-yellow);
+  padding-right: 20px;
+  padding-left: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  margin: 0 !important;
+
+  font-weight: 500;
+  font-size: 15px;
+  font-family: 'ProximaNova-Regular', sans-serif !important;
+}
+.menu-button{
+  margin-left: 10px;
+  color: var(--offwhite-theme);
+  background: rgba(255, 255, 255, 0.02);
+  font-family: 'ProximaNova-Regular', sans-serif !important;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#navbar-small-dropdown-menu{
+  padding: 15px;
+  min-width:200px;
+}
+
+@media (max-width: 991px) {
+  #navbar-small-login{
+    display:inline-block;
+    margin-top:8px;
+  }
+  
+  #default-login{
+    display:none;
+  }
+}
+
+@media (min-width: 992px) {
+  #navbar-small-login{
+    display: none;
+  }
+  
+  #default-login{
+    margin-top: 12px;
+    display:inline-block;
+  }
+}
+

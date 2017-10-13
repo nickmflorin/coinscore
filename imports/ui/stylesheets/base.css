@@ -1,0 +1,184 @@
+body {
+  color: var(--blackolive-theme);
+  background-color: var(--offwhite-theme);
+  
+  margin: 0;
+  line-height: 1.7em;
+  font-size: 13px;
+  outline: 0;
+  
+  font-weight: 300 !important;
+  font-family: 'ProximaNova-Regular', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: none !important;
+}
+
+h1 { font-family: 'ProximaNova-Thin'; }
+h2 { font-family: 'ProximaNova-Light'; }
+h3 { font-family: 'ProximaNova-Regular'; }
+h4 { font-family: 'ProximaNova-Semibold'; }
+h5 { font-family: 'ProximaNova-Bold'; }
+
+.v-block {
+  white-space: nowrap;
+}
+ 
+.v-block:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
+
+.v-centered {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/******************************************* Bootstrap Grid System  ******************************************/
+
+.row {
+   height: 100%;
+   margin-left:0;
+   margin-right:0;
+}
+
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, 
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, 
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12,
+.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{ 
+  padding:0px;
+}
+
+/* ================================================
+  Text Headers and Links
+================================================ */
+
+a {
+  text-decoration: none;
+}
+
+a:hover,a:focus {
+  text-decoration: none;
+  cursor: pointer !important;
+}
+
+a.table-link {
+  color: var(--blue);
+  font-size: 12px !important;
+  font-family: "Roboto-Light", sans-serif !important;
+}
+a.table-link:hover, a.table-link:focus{
+  color: var(--red) !important;
+  cursor: pointer !important;
+}
+
+label {
+  font-family: "Roboto-Regular", sans-serif !important;
+  font-weight: 400;
+  color: var(--header-text-color);
+}
+
+h1 {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    font-weight: 400 !important;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: none !important;
+}
+
+h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 400 !important;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: none !important;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.5rem
+}
+
+h4 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    margin-bottom: .5rem
+}
+
+h5 {
+    font-size: .8125rem;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-transform: uppercase
+}
+h1 a,
+h1 a:active,
+h1 a:hover{
+    color: var(--primary-text-color)
+}
+
+/* ================================================
+Inputs 
+================================================ */
+
+input[type='text'], input[type='password'], input[type='button']  {
+  height: 30px;
+  border-radius: 3px;
+  padding-left: 10px;
+  font-size: 12px;
+  background: #fff;
+  border: 1px solid #BDC4C9;
+}
+
+select {
+  height: 30px;
+  width: 200px;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: none !important;
+}
+
+input[type='checkbox'] {
+  height: 20px;
+  font-size: 14px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 20px;
+  margin: 0;
+  position:relative;
+  top: 3px;
+}
+
+input[type='checkbox'] span {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+
+/* ================================================
+Lists 
+================================================ */
+li {
+    list-style-type: none;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    code {
+        padding-left: 0;
+        padding-right: 0
+    }
+    code:after,
+    code:before {
+        letter-spacing: -.25rem;
+        content: "\00a0"
+    }
+    pre code:after,
+    pre code:before {
+        letter-spacing: normal;
+        content: ""
+    }
+}
+
+

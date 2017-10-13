@@ -1,0 +1,181 @@
+/* ================================================
+  Colors
+================================================ */
+:root {
+    --landing-separator : #eef1fb;
+
+    --blackolive-theme : rgba(43,43,49,1.0);
+    --landing-background : var(--blackolive-theme);
+
+    --blue-theme : rgba(79,98,181,1.0);
+    --blue-theme-hex : #4f62b5;
+
+    --yellow-bland-theme : rgba(247,226,105,1.0); 
+    --yellow-bland-theme-hex : #F7E269;
+
+    --yellow-theme : #FAF96A;
+    --yellow-theme-hex : #FAF96A;
+
+    --red-theme : rgba(209,85,97,1.0); 
+    --red-theme-hex : #D15561;
+
+    --offwhite-theme : rgba(253,255,252,1.0);
+    --offwhite-theme-hex : #FDFFFC;
+
+    --orange-theme : rgba(238,162,84,1.0); 
+    --orange-theme-hex : #eea254;
+
+    --primary-text-color : var(--blackolive-theme);
+    --secondary-text-color : #6f6f6f;
+}
+
+
+/* ================================================
+  Fonts
+================================================ */
+@font-face {
+    font-family: "RobotoCondensed-Bold";
+    src: local('/font/RobotoCondensed-Bold'), url("./font/RobotoCondensed-Bold.ttf") format('truetype');
+}
+@font-face {
+    font-family: "RobotoCondensed-BoldItalic";
+    src: local('/font/RobotoCondensed-BoldItalic'), url("./font/RobotoCondensed-BoldItalic.ttf") format('truetype');
+}
+@font-face {
+    font-family: "RobotoCondensed-Italic";
+    src: local('/font/RobotoCondensed-Italic'), url("./font/RobotoCondensed-Italic.ttf") format('truetype');
+}
+@font-face {
+    font-family: "RobotoCondensed-Light";
+    src: local('/font/RobotoCondensed-BoldItalic'), url("./font/RobotoCondensed-BoldItalic.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "RobotoCondensed-Regular";
+    src: local('/font/RobotoCondensed-Regular'), url("./font/RobotoCondensed-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: local('/font/Roboto-Regular'), url("./font/Roboto-Regular.ttf") format('truetype');
+}
+@font-face {
+    font-family: "Roboto-BoldItalic";
+    src: local('/font/Roboto-BoldItalic'), url("./font/Roboto-BoldItalic.ttf") format('truetype');
+}
+@font-face {
+    font-family: "Roboto-Italic";
+    src: local('/font/Roboto-Italic'), url("./font/Roboto-Italic.ttf") format('truetype');
+}
+@font-face {
+    font-family: "Roboto-Light";
+    src: local('/font/Roboto-Light'), url("./font/Roboto-Light.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: local('/font/Roboto-Regular'), url("./font/Roboto-Regular.ttf") format('truetype');
+}
+@font-face {
+    font-family: "Roboto-Thin";
+    src: local('/font/Roboto-Thin'), url("./font/Roboto-Thin.ttf") format('truetype');
+}
+@font-face {
+    font-family: "Roboto-Medium";
+    src: local('/font/Roboto-Medium'), url("./font/Roboto-Medium.ttf") format('truetype');
+}
+@font-face {
+    font-family: "SanFranciscoDisplay-Light";
+    src: local('/font/SanFranciscoDisplay-Light'), url("./font/SanFranciscoDisplay-Light.otf") format('truetype');
+}
+@font-face {
+    font-family: "SanFranciscoDisplay-Thin";
+    src: local('/font/SanFranciscoDisplay-Thin'), url("./font/SanFranciscoDisplay-Thin.otf") format('truetype');
+}
+@font-face {
+    font-family: "SanFranciscoDisplay-Medium";
+    src: local('/font/SanFranciscoDisplay-Medium'), url("./font/SanFranciscoDisplay-Medium.otf") format('truetype');
+}
+@font-face {
+    font-family: "SanFranciscoDisplay-SemiBold";
+    src: local('/font/SanFranciscoDisplay-SemiBold'), url("./font/SanFranciscoDisplay-SemiBold.otf") format('truetype');
+}
+@font-face {
+    font-family: "SanFranciscoDisplay-Regular";
+    src: local('/font/SanFranciscoDisplay-Regular'), url("./font/SanFranciscoDisplay-Regular.otf") format('truetype');
+}
+@font-face {
+    font-family: "SanFranciscoText-Light";
+    src: local('/font/SanFranciscoText-Light'), url("./font/SanFranciscoText-Light.otf") format('truetype');
+}
+@font-face {
+    font-family: "SanFranciscoText-Thin";
+    src: local('/font/SanFranciscoText-Thin'), url("./font/SanFranciscoText-Thin.otf") format('truetype');
+}
+@font-face {
+    font-family: "SanFranciscoText-Medium";
+    src: local('/font/SanFranciscoText-Medium'), url("./font/SanFranciscoText-Medium.otf") format('truetype');
+}
+@font-face {
+    font-family: "SanFranciscoText-SemiBold";
+    src: local('/font/SanFranciscoText-SemiBold'), url("./font/SanFranciscoText-SemiBold.otf") format('truetype');
+}
+@font-face {
+    font-family: "SanFranciscoText-Regular";
+    src: local('/font/SanFranciscoText-Regular'), url("./font/SanFranciscoText-Regular.otf") format('truetype');
+}
+
+
+/* ================================================
+  Plugins
+================================================ */
+/* Bootstrap Main Css File (unedited) */
+@import url('plugins/bootstrap.css');
+
+@import url('plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css');
+@import url('plugins/bootstrap-select/bootstrap-select.css');
+@import url('plugins/bootstrap-toggle/bootstrap-toggle.min.css');
+
+/* Bootstrap wysihtml5 */
+@import url('plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.css');
+
+/* Summernote */
+@import url('plugins/summernote/summernote.css');
+@import url('plugins/summernote/summernote-bs3.css');
+
+/* Sweet Alert */
+@import url('plugins/sweet-alert/sweet-alert.css');
+@import url('plugins/datatables/datatables.css');
+
+/* Chartist */
+@import url('plugins/chartist/chartist.min.css');
+
+/* Rickshaw */
+@import url('plugins/rickshaw/rickshaw.css');
+@import url('plugins/rickshaw/detail.css');
+@import url('plugins/rickshaw/graph.css');
+@import url('plugins/rickshaw/legend.css');
+
+@import url('plugins/date-range-picker/daterangepicker-bs3.css');
+@import url('plugins/fullcalendar/fullcalendar.css');
+
+@import url('/charts.css');
+@import url('/icons.css');
+@import url('loading.css');
+@import url('buttons.css');
+@import url('tooltip.css');
+@import url('search.css');
+@import url('tables.css');
+
+@import url('brand.css');
+@import url('base.css');
+
+@import url('responsive.css');
+
+
+@import url('plugins/font-awesome.min.css');
+
+
+
+
+
