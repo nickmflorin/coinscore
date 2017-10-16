@@ -1,10 +1,10 @@
 module.exports = {
   servers: {
     one: {
-      "host": "54.191.111.240",
+      "host": "34.214.223.17",
       "username": "ubuntu",
       "password":"password",
-      "pem": "/Users/nickflorin/Desktop/coin.pem",
+      "pem": "/Users/nickflorin/Desktop/CoinScore.pem",
     }
   },
   meteor: {
@@ -18,8 +18,8 @@ module.exports = {
     },
     env: {
       PORT: 80,
-      ROOT_URL: "http://ec2-54-191-111-240.us-west-2.compute.amazonaws.com",
-      MONGO_URL:"mongodb://54.191.111.240:27017/meteor",
+      ROOT_URL: "http://ec2-34-214-223-17.us-west-2.compute.amazonaws.com",
+      MONGO_URL:"mongodb://34.214.223.17:27017/meteor",
     },
     docker: {
       image: 'abernix/meteord:base',

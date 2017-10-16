@@ -6,6 +6,8 @@ import $ from 'jquery';
 import './landing.html';
 import './landing.css';
 import './header.css';
+import './text.css';
+import './contact.css';
 import './footer.css';
 
 function size(value){
