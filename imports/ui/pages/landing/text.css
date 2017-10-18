@@ -1,10 +1,9 @@
 .large-tagline{
     font-size: 32px;
-    color: var(--blue-theme);
+    color: var(--blackolive-theme);
     font-family: 'ProximaNova-Regular', sans-serif !important;
     -webkit-font-smoothing: antialiased;
     line-height: 1.2;
-    clear: both;
     text-shadow: 0.6px 0.6px rgba(0, 0, 0, 0.05);
 }
 
@@ -86,7 +85,7 @@
 
 .header-separator h2.large-tagline{
     padding-top: 10px;
-    border-top: 1.5px solid var(--blue-theme);
+    border-top: 1.0px solid var(--blackolive-theme);
     text-align: center;
     margin: 0 auto;
 }

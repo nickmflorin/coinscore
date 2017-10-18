@@ -1,8 +1,8 @@
 .landing-content {
-    margin: 600px auto 0 auto;
+    margin: 550px auto 0 auto;
     position: relative;
     z-index: 3;
-    background-color: #f9f9f9;
+    background-color: rgba(43,44,50,0.09);
     padding-top: 20px;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .header-separator {
-	border-top: 1px solid rgba(238, 161, 85, 0.5);
+	border-top: 1px solid rgba(43,44,50,0.15);
 	height: 55px;
 }
 
