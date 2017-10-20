@@ -2,11 +2,13 @@
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0);
-    background-color: var(--landing-background);
     height: 550px;
     z-index: -1;
     box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    background-color: rgba(0,0,0,0.85);
+    background-image: url('/img/Background.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .landing-header-content {
@@ -14,43 +16,31 @@
     padding-top: 180px;
 }
 
-.landing-logo-container {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    font-family: "ProximaNova-Regular" !important;
-}
-
-.landing-logo-image-container{
-    width: 110px;
-    height: 110px;
-}
-
-.landing-logo-first-word-container{
-	height: 110px;
-	line-height: 125px;
-    font-size: 135px;
-    color: var(--yellow-theme);
-    padding-left: 15px;
-}
-
-.landing-logo-second-word-container{
-	height: 110px;
-    font-size: 135px;
-    line-height: 125px;
-    color: var(--offwhite-theme);
-}
-
-#landing-img {
-    height: 100%;
+.landing-logo-row{
     width: 100%;
+    text-align: center;
+}
+.landing-logo-container{
+    max-height: 100px;
+    margin: 0 auto;
+    position: relative;
+}
+.landing-logo{
+  margin: 0 auto;
+  object-fit: contain;
+  width: auto;
+  max-height: 100%;
+  max-width: 650px;
 }
 
-#tagline {
-    font-size: 34px;
-    line-height: 36px;
-    color: var(--offwhite-theme);
+.tagline {
+    font-size: 26px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    line-height: 26px;
+    color: var(--gray-text);
+    text-align: center;
+    font-family: 'ProximaNova-Regular', sans-serif !important;
 }
 
 #tagline-cont {
@@ -68,8 +58,31 @@
 }
 
 .landing-button{
-    font-family: "ProximaNova-Regular" !important;
+    font-family: "ProximaNova-Light" !important;
     border-radius: 1px !important;
-    background-color: var(--yellow-theme) !important;
+    font-size: 18px !important;
+    padding: 14px 14px 14px 14px !important;
+    background-color: var(--orange-theme) !important;
     color: var(--blackolive-theme) !important;
+    height: auto !important;
+
+    line-height: 1.2rem;
+    user-select: none;
+    text-decoration: none;
+    cursor: pointer;
+    text-shadow: none;
+    border: none;
+
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+    text-align: center;
+    white-space: nowrap;
+    margin: 0;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.landing-button:hover, .landing-button:focus{
+    background-color: var(--orange-theme-hover) !important;
 }

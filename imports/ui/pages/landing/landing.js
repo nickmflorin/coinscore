@@ -16,7 +16,7 @@ function size(value){
 
 var nav_alpha_start = 0.0
 var current_alpha = 0.0
-var max_alpha = 0.8
+var max_alpha = 0.6
 
 Template.landing.onRendered(function(){
 	var headerHeight = $('.landing-header').height();
@@ -44,7 +44,7 @@ Template.landing.onRendered(function(){
 			var ratio = x1 / navHeight // Will Continue Shading NavBar Height Passed Edge
 			if(ratio < 1.0){
 				var rgba = nav_alpha_start + ratio * max_alpha;
-				$('.navbar-top').css('background', 'rgba(43,44,50,' + rgba);
+				$('.navbar-top').css('background', 'rgba(43,43,49,' + rgba);
 			}
 		}
 		

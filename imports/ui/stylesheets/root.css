@@ -24,7 +24,9 @@
 
     --orange-theme : rgba(238,162,84,1.0); 
     --orange-theme-hex : #eea254;
+    --orange-theme-hover : rgba(238,162,84,0.6); 
 
+    --gray-text : rgba(243,249,243,1.0);
     --primary-text-color : var(--blackolive-theme);
     --secondary-text-color : #6f6f6f;
 }

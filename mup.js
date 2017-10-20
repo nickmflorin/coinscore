@@ -1,7 +1,7 @@
 module.exports = {
   servers: {
     one: {
-      "host": "34.214.223.17",
+      "host": "52.26.33.248",
       "username": "ubuntu",
       "password":"password",
       "pem": "/Users/nickflorin/Desktop/CoinScore.pem",
@@ -18,8 +18,8 @@ module.exports = {
     },
     env: {
       PORT: 80,
-      ROOT_URL: "http://ec2-34-214-223-17.us-west-2.compute.amazonaws.com",
-      MONGO_URL:"mongodb://34.214.223.17:27017/meteor",
+      ROOT_URL: "http://ec2-52-26-33-248.us-west-2.compute.amazonaws.com",
+      MONGO_URL:"mongodb://52.26.33.248:27017/meteor",
     },
     docker: {
       image: 'abernix/meteord:base',

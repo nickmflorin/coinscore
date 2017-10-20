@@ -1,5 +1,5 @@
 .navbar-top {
-  height: 60px;
+  height: 65px;
   background: rgba(0,0,0,0.0);
   width: 100%;
   position: fixed;
@@ -81,11 +81,12 @@
 }
 .menu-button{
   margin-left: 10px;
-  color: var(--offwhite-theme);
-  background: rgba(255, 255, 255, 0.02);
+  color: var(--gray-text);
   font-family: 'ProximaNova-Regular', sans-serif !important;
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 16px !important;
+  padding: 8px 12px 8px 12px !important;
+  line-height: 16px;
+  height: 32px !important;
 }
 
 #navbar-small-dropdown-menu{
