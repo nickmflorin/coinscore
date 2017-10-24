@@ -14,7 +14,7 @@
     display: flex;
 }
 .landing-container:not(:first-child){
-  margin-top: 50px;
+  margin-top: 70px;
 }
 .landing-container:not(:last-child){
   margin-bottom: 50px;
@@ -108,6 +108,7 @@
 
 .contact-banner {
     flex: 1;
+    border-radius: 8px;
     background-color: var(--orange-theme);
     color: var(--gray-text) !important;
     margin-top: 15px;

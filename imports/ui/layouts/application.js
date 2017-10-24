@@ -42,6 +42,16 @@ Template.navbarTemplate.events({
             $('.content').addClass('hidden-content')
         }
     },
+    'click button[name="navbar-menu-button"]' : function(e, t){
+        var attr_id = $(e.target).attr('id')
+        var pivot = attr_id + '-pivot'
+        var nav = $('.navbar-top').height()
+        var top = $('#' + pivot).offset().top - nav
+        $('html, body').animate({
+            scrollTop: top
+        }, 400);
+    }
   
 });
+
 

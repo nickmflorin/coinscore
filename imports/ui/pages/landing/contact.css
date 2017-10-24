@@ -3,7 +3,6 @@
   position: relative;
 }
 .contact-form{
-	margin: auto 0;
   text-align: center;
 }
 
@@ -13,43 +12,37 @@
 	margin-right: 15px;
   flex: 1;
   max-width: 60px;
+  color: var(--gray-text) !important;
 }
 
 .social-link:hover div, .social-link:focus div {
-  background-color: rgba(0,0,0,0.45) !important;
+  background-color: rgba(255,255,255,0.65) !important;
   border: 0.1rem solid rgba(255,255,255,0.65) !important;
-  -webkit-transition: 0.3s ease-in-out;
-   -moz-transition: 0.3s ease-in-out;
-   -o-transition: 0.3s ease-in-out;
-   transition: 0.3s ease-in-out;
-}
-
-.social-link:hover div i, .social-link:focus div i {
-  color: var(--offwhite-theme) !important;
 
   -webkit-transition: 0.3s ease-in-out;
    -moz-transition: 0.3s ease-in-out;
    -o-transition: 0.3s ease-in-out;
    transition: 0.3s ease-in-out;
 }
+
 
 .social-link div{
-	color: rgba(0,0,0,0.65) !important;
-  border: 0.1rem solid rgba(0,0,0,0.65) !important;
+  border: 0.1rem solid var(--gray-text) !important;
 	border-radius: 999px; 
 	width: 60px; 
 	height: 60px;
+  color: var(--gray-text) !important;
 }
 
 .social-link div i {
-	color: rgba(0,0,0,0.65) !important;
 	font-size: 38px; 
 	line-height: 60px; 
 	margin: 0 auto;
+  color: var(--gray-text) !important;
 }
 
 .social-link-container {
-	margin: 0 auto;
+	float:right;
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -76,9 +69,9 @@
   font-size: 14px !important;
 
   margin-top: 15px;
-  margin-left: 10%;
-  margin-right: 10%;
-  width: 80%;
+  margin-left: 3%;
+  margin-right: 3%;
+  width: 94%;
 
   font-family: 'ProximaNova-Regular', sans-serif !important;
   border: 0.1rem solid rgba(0,0,0,0.65) !important;
@@ -88,49 +81,46 @@
   color: var(--landing-background) !important;
 }
 
-.social-link:hover div, .social-link:focus div {
-  background-color: rgba(0,0,0,0.45) !important;
-  border: 0.1rem solid rgba(255,255,255,0.65) !important;
-  -webkit-transition: 0.3s ease-in-out;
-   -moz-transition: 0.3s ease-in-out;
-   -o-transition: 0.3s ease-in-out;
-   transition: 0.3s ease-in-out;
+.contact-blurb{
+  font-size: 16px;
+  font-weight: 400 !important;
+  font-family: 'ProximaNova-Light', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: none !important;
+  text-align: left;
+  color: var(--gray-text);
+  line-height: 1.4 !important;
 }
 
-.social-link:hover div i, .social-link:focus div i {
-  color: var(--offwhite-theme) !important;
-
-  -webkit-transition: 0.3s ease-in-out;
-   -moz-transition: 0.3s ease-in-out;
-   -o-transition: 0.3s ease-in-out;
-   transition: 0.3s ease-in-out;
+.contact-message{
+  resize: none;
+  height: 180px !important;
 }
-
 
 .contact-submit{
   height: auto !important;
   border-radius: 5px !important;
 
-  color: #FFF !important;
-  border: 0.1rem solid rgba(0,0,0,0.65) !important;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+
+  color: var(--gray-text) !important;
+  border: 0.1rem solid var(--gray-text) !important;
 
   padding-left: 15px !important;
   padding-right: 15px !important;
 
-  font-size: 14px !important;
+  font-size: 16px !important;
   background: #2b2b31 !important;
 
-  width: 160px;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
   margin-top: 30px;
-
-  margin-left: 15px;
 }
 
 .contact-submit:hover, .contact-submit:focus {
-  background-color: rgba(43,43,43,0.85) !important;
-
+  background-color: rgba(255,255,255,0.65) !important;
 	color:  #FFF !important;
 
 	-webkit-transition: 0.3s ease-in-out;

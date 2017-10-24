@@ -1,271 +1,359 @@
 <template name="landing">
+    {{ > landingHeader }}
+    <div class='landing-content'>
+        {{ > landingContent }}
+        <div style='margin-top: 40px;'>
+            {{ > landingFooter }}
+        </div>
+    </div>
+</template>
 
+
+<template name="landingHeader">
     <header class='landing-header'>
         <div class="landing-header-content">
 
             <div class='landing-logo-row'>
-                <div class='landing-logo-container'>
+                <div class='landing-logo-container landing-logo-container-center'>
                     <img class="landing-logo" src="/img/Logo.png">
                 </div> 
             </div>
-            <h2 class='tagline'> Providing clarity for uncertain and volatile markets. </h2>
+            <div class='landing-tagline-row'>
+                <div class='landing-tagline-container landing-tagline-container-center'>
+                    <h2 class='landing-tagline'> Providing clarity for uncertain and volatile markets. </h2>
+                </div>
+            </div>
 
             <div class="landing-button-cont">
-                <button class="landing-button" type="submit" tab-index=3>Try the Beta</button>
+                <button class="landing-button" id='try-beta' tab-index=3>Try the Beta</button>
             </div>
         </div>
+        {{ > beta }}
     </header>
+</template>
 
-    <div class='landing-content'>
-
-        <div class='landing-container mission-container'>
-            <h2 class='mission'>
-                While the digital asset class is introducing innovation into markets, it is also removing transparency.  CoinScore's purpose was to reduce the opaqueness in the cryptocurrency investment space while simultaneously improving investment outcomes for users. 
+<template name="beta">
+    <div class='beta-form-container'>
+        <div style='height: 45px; padding-top: 5px; padding-bottom: 5px; margin-bottom: 5px;'>
+            <button class='beta-close-button'> <i class='fa fa-times'></i> </button>
+        </div>
+        <div class='beta-form' style='margin-top: 10px;'>
+            <h2 class='beta-blurb'>
+                Just provide us with your email address and name and we wil reach out for further information.
             </h2>
+            <form>
+                <input type="text" class="beta-input" placeholder="Contact name" id="beta-name" style='margin-top: 40px;'> 
+                <input type="email" class="beta-input" placeholder="Email address" id="beta-email">
+                <button id="beta-submit" class='btn beta-submit'>Submit</button>
+            </form>
         </div>
+    </div>
+</template>
 
-        <div class='separator-container'>
-            <div class='separator'></div>
-        </div>
 
-        <div class='header-container'>
-            <h2 class='header'> Technical expertise built directly into the platform. </h2>
-        </div>
+<template name="landingContent">
+    <div class='landing-container mission-container'>
+        <h2 class='mission'>
+            While the digital asset class is introducing innovation into markets, it is also removing transparency.  CoinScore's purpose was to reduce the opaqueness in the cryptocurrency investment space while simultaneously improving investment outcomes for users. 
+        </h2>
+    </div>
 
-        <div class='landing-container'>
-            <div class='column' style='min-width: 500px'>
-                <div class='item' style='display: flex;'>
-                    <div class='icon-container'>
-                        <img class='icon-image' src="/img/Taxonomy.png">
-                    </div>
-                    <div style='padding-left: 60px; flex-grow: 100; max-width: 360px;'>
-                        <h2 class='item-header' style='text-align: left;'> Comprehensive Taxonomy </h2>
-                        <div>
-                            <p class='item-text-left'> Digital assets are classified into 19 sectors and 37 sub sectors in provide users with insight into industry wide market trends.</p>
-                        </div>
-                    </div>
+    {{ > about }}
+    {{ > banner }}
+    {{ > portfolioManagement }}
+    {{ > transparency }}
+    {{ > beat }}
+    {{ > contact }}
+</template>
+
+<template name="about">
+    <div class='separator-container'>
+        <div class='separator'></div>
+    </div>
+
+    <div class='header-container' id='about-pivot'>
+        <h2 class='header'> Technical expertise built directly into the platform. </h2>
+    </div>
+
+    <div class='landing-container'>
+        <div class='column' style='min-width: 500px; padding-top: 25px;'>
+            <div class='item' style='display: flex;'>
+                <div class='icon-container'>
+                    <img class='icon-image' src="/img/Taxonomy.png">
                 </div>
-                <div class='item' style='display: flex;'>
-                   <div class='icon-container'>
-                        <img class='icon-image' src="/img/Level.png">
-                    </div>
-                    <div style='padding-left: 60px; flex-grow: 100; max-width: 360px;'>
-                        <h2 class='item-header' style='text-align: left;'> Proprietary Scoring </h2>
-                        <div>
-                            <p class='item-text-left'> Our 50 dimensional proprietary scoring models are developed from quantitative measures, market research and traditional in-person research.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class='item' style='display: flex;'>
-                    <div class='icon-container'>
-                        <img class='icon-image' src="/img/ComputerPhoneColored.png">
-                    </div>
-                    <div style='padding-left: 60px; flex-grow: 100; max-width: 360px;'>
-                        <h2 class='item-header' style='text-align: left;'> Extensive Live Data </h2>
-                        <div>
-                            <p class='item-text-left'> Live data from several sources is streamed into the platform to provide users with the most up to date real time information. </p>
-                        </div>
+                <div style='padding-left: 60px; flex-grow: 100; max-width: 360px;'>
+                    <h2 class='item-header' style='text-align: left;'> Comprehensive Taxonomy </h2>
+                    <div>
+                        <p class='item-text-left'> Digital assets are classified into 19 sectors and 37 sub sectors in provide users with insight into industry wide market trends.</p>
                     </div>
                 </div>
             </div>
-
-            <div class='column fit-image-container' style='padding-top: 40px; line-height: 1; text-align: right; height: 100%; width: 100%; max-width: 55%; margin: 0 0 0 auto; padding-right: 0px;'>
-                <img class='screenshot' src="/img/ComputerIpadMain.png">
+            <div class='item' style='display: flex;'>
+               <div class='icon-container'>
+                    <img class='icon-image' src="/img/Level.png">
+                </div>
+                <div style='padding-left: 60px; flex-grow: 100; max-width: 360px;'>
+                    <h2 class='item-header' style='text-align: left;'> Proprietary Scoring </h2>
+                    <div>
+                        <p class='item-text-left'> Our 50 dimensional proprietary scoring models are developed from quantitative measures, market research and traditional in-person research.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <div class='landing-banner'>
-            <div class='landing-container'>
-                <div class='landing-banner-row'>
-                    <div class='landing-banner-item'>
-                        <h2 class='banner-number'> 1517 </h2>
-                        <h2 class='banner-text'>Unique Coins Indexed</h2>
-                    </div>
-                    <div class='landing-banner-item'>
-                        <h2 class='banner-number'> 100 </h2>
-                        <h2 class='banner-text'>Scored Assets</h2>
-                    </div>
-                    <div class='landing-banner-item'>
-                        <h2 class='banner-number'> 19 </h2>
-                        <h2 class='banner-text'>Classified Sectors</h2>
-                    </div>
-                    <div class='landing-banner-item'>
-                        <h2 class='banner-number'> 37 </h2>
-                        <h2 class='banner-text'>Classified Sub Sectors</h2>
+            <div class='item' style='display: flex;'>
+                <div class='icon-container'>
+                    <img class='icon-image' src="/img/ComputerPhoneColored.png">
+                </div>
+                <div style='padding-left: 60px; flex-grow: 100; max-width: 360px;'>
+                    <h2 class='item-header' style='text-align: left;'> Extensive Live Data </h2>
+                    <div>
+                        <p class='item-text-left'> Live data from several sources is streamed into the platform to provide users with the most up to date real time information. </p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class='separator-container'>
-            <div class='separator'></div>
+        <div class='column fit-image-container' style='padding-top: 40px; line-height: 1; text-align: right; height: 100%; width: 100%; max-width: 55%; margin: 0 0 0 auto; padding-right: 0px;'>
+            <img class='screenshot' src="/img/ComputerIpadMain.png">
         </div>
+    </div>
+</template>
 
-        <div class='header-container'>
-            <h2 class='header'> Portfolio management for a new age asset class. </h2>
-        </div>
+<template name="portfolioManagement">
+    <div class='separator-container'>
+        <div class='separator'></div>
+    </div>
+
+    <div class='header-container'>
+        <h2 class='header'> Portfolio management for a new age asset class. </h2>
+    </div>
 
 
-        <div class='landing-container'>
-            <div style='display: flex; width: 100%;'>
+    <div class='landing-container'>
+        <div style='display: flex; width: 100%;'>
 
-                <div class='three-row-item' style='margin: auto auto auto 0; padding-left: 15px; padding-right: 15px;'>
-                    <div class='icon-container'>
-                        <img class='icon-image' src="/img/Pie.png">
-                    </div>
-                    <div class='separator-container' style='margin-top: 25px; margin-bottom: 10px; width: 84%; margin-right: 8%; margin-left: 8%'>
-                        <div class='separator'></div>
-                    </div>
-                    <div style='margin-top: 10px; width: 100%;'>
-                        <h2 class='item-header' style='text-align: center;'> Asset Allocation </h2>
-                        <div >
-                            <p class='item-text-center'> CoinScore will allow users to break down their crypto portfolio's allocation by numerous quantitative and taxonomical metrics.  Users can develop their own optimal allocations and monitor their portfolo's progress to or divergence from these strategic goals. </p>
-                        </div>
+            <div class='three-row-item' style='margin: auto auto auto 0; padding-left: 15px; padding-right: 15px;'>
+                <div class='icon-container'>
+                    <img class='icon-image' src="/img/Pie.png">
+                </div>
+                <div class='separator-container' style='margin-top: 25px; margin-bottom: 10px; width: 84%; margin-right: 8%; margin-left: 8%'>
+                    <div class='separator'></div>
+                </div>
+                <div style='margin-top: 10px; width: 100%;'>
+                    <h2 class='item-header' style='text-align: center;'> Asset Allocation </h2>
+                    <div >
+                        <p class='item-text-center'> CoinScore will allow users to break down their crypto portfolio's allocation by numerous quantitative and taxonomical metrics.  Users can develop their own optimal allocations and monitor their portfolo's progress to or divergence from these strategic goals. </p>
                     </div>
                 </div>
+            </div>
 
-                <div class='three-row-item' style='margin: auto 0 auto 0; padding-left: 15px; padding-right: 15px;'>
-                   <div class='icon-container'>
-                        <img class='icon-image' src="/img/Meter.png">
-                    </div>
-                    <div class='separator-container' style='margin-top: 25px; margin-bottom: 10px; width: 84%; margin-right: 8%; margin-left: 8%'>
-                        <div class='separator'></div>
-                    </div>
-                    <div style='margin-top: 10px; width: 100%;'>
-                        <h2 class='item-header' style='text-align: center;'> Risk Management </h2>
-                        <div>
-                            <p class='item-text-center'> 
-                                Our proprietary scoring models and built in expertise will drastically increase the transparency around ICOs and other digital assets.  CoinScore will allow users to be well informed about ICOs before and after any investment decisions are made.</p>
-                        </div>
+            <div class='three-row-item' style='margin: auto 0 auto 0; padding-left: 15px; padding-right: 15px;'>
+               <div class='icon-container'>
+                    <img class='icon-image' src="/img/Meter.png">
+                </div>
+                <div class='separator-container' style='margin-top: 25px; margin-bottom: 10px; width: 84%; margin-right: 8%; margin-left: 8%'>
+                    <div class='separator'></div>
+                </div>
+                <div style='margin-top: 10px; width: 100%;'>
+                    <h2 class='item-header' style='text-align: center;'> Risk Management </h2>
+                    <div>
+                        <p class='item-text-center'> 
+                            Our proprietary scoring models and built in expertise will drastically increase the transparency around ICOs and other digital assets.  CoinScore will allow users to be well informed about ICOs before and after any investment decisions are made.</p>
                     </div>
                 </div>
+            </div>
 
-                <div class='three-row-item' style='margin: auto 0 auto auto; padding-left: 15px; padding-right: 15px;'>
-                    <div class='icon-container'>
-                        <img class='icon-image' src="/img/StockPicks.png">
-                    </div>
-                    <div class='separator-container' style='margin-top: 25px; margin-bottom: 10px; width: 84%; margin-right: 8%; margin-left: 8%'>
-                        <div class='separator'></div>
-                    </div>
-                    <div style='margin-top: 10px; width: 100%;'>
-                        <h2 class='item-header' style='text-align: center;'> Trading Integration </h2>
-                        <div>
-                            <p class='item-text-center'> Users can effortlessly move from analysis to execution by executing trades through one of the available partnered exchange platforms.  From a single platform, users can compare activity and execute trades across several exchanges. </p>
-                        </div>
+            <div class='three-row-item' style='margin: auto 0 auto auto; padding-left: 15px; padding-right: 15px;'>
+                <div class='icon-container'>
+                    <img class='icon-image' src="/img/StockPicks.png">
+                </div>
+                <div class='separator-container' style='margin-top: 25px; margin-bottom: 10px; width: 84%; margin-right: 8%; margin-left: 8%'>
+                    <div class='separator'></div>
+                </div>
+                <div style='margin-top: 10px; width: 100%;'>
+                    <h2 class='item-header' style='text-align: center;'> Trading Integration </h2>
+                    <div>
+                        <p class='item-text-center'> Users can effortlessly move from analysis to execution by executing trades through one of the available partnered exchange platforms.  From a single platform, users can compare activity and execute trades across several exchanges. </p>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+</template>
 
-        <div class='landing-container' style='margin-top: 85px;'>
-            <div style='display: flex; flex-direction: row-reverse;'>
-                <div style='padding-right: 55px; flex:1;'>
-                    <h2 class='blurb-header'>
-                        Transparency
+<template name="transparency">
+    <div class='landing-container' style='margin-top: 85px;'>
+        <div style='display: flex; flex-direction: row-reverse;'>
+            <div style='padding-right: 55px; flex:1;'>
+                <h2 class='blurb-header'>
+                    Transparency
+                </h2>
+                <h2 class='blurb' style='width: 100%; position:relative; margin: 0 auto; max-width: 100%; max-height: 100%'>
+                    The complexities of the new digital asset class introduce both innovation and opaqueness into the market place.  One of the primary goals of CoinScore was to pave the way for transparency in this niche market by allowing every market participant to have the best available information in regard to these assets.
+                </h2>
+                <h2 class='blurb' style='width: 100%; position:relative; margin: 0 auto; margin-top: 25px; max-width: 100%; max-height: 100%'>
+                This information, which adjusts over time, will allow users to dynamically allocate their portfolios around industry sector characteristics and assess the risks of your portfolio as time progresses.
+                </h2>
+            </div>
+            <div class='fit-image-container' style='line-height: 1; text-align: center; margin: 0 auto; padding-right: 25px; flex:1;'>
+                <img style='max-height: 600px; max-width: 800px; vertical-align: middle; object-fit: contain;' src="/img/ComputerPortfolio.png">
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="beat">
+    <div class='separator-container'>
+        <div class='separator' style='margin-left: 0px; margin-right: 0px; width: 100%'></div>
+    </div>
+
+    <div class='header-container'>
+        <h2 class='header' style='text-align: left;'> Never miss a beat. </h2>
+    </div>
+
+    <div class='landing-container' style='margin-top: 10px;'>
+        <div style='display: flex; flex-direction: row;'>
+            <div style='flex:1;'>
+                <h2 class='blurb' style='width: 100%; position:relative; margin: 0 auto; margin-top:10px; margin-bottom: 25px; max-width: 100%; max-height: 100%'>
+                    CoinScore was developed with the mindset that our users should be able to access all of the most useful information from the same platform.  The platform was carefully designed so that at any given interface, the user is fully aware of what is going on in the market.
+                </h2>
+
+                <div style='padding-right: 55px; flex:1; margin-top: 65px;'>
+                    <h2 class='blurb-header' style='margin-bottom: 15px;'>
+                        Sentiment
                     </h2>
                     <h2 class='blurb' style='width: 100%; position:relative; margin: 0 auto; max-width: 100%; max-height: 100%'>
-                        The complexities of the new digital asset class introduce both innovation and opaqueness into the market place.  One of the primary goals of CoinScore was to pave the way for transparency in this niche market by allowing every market participant to have the best available information in regard to these assets.  This information, which adjusts over time, will allow users to dynamically allocate their portfolios around industry sector characteristics and assess the risks of your portfolio as time progresses.
+                        Natural language processing powered by machine learning algorithms leverage data collected from news sources, blog posts and social media outlets to allow users to observe market sentiment about specific digital assets while monitoring their portfolios.  
                     </h2>
                 </div>
-                <div class='fit-image-container' style='line-height: 1; text-align: center; margin: 0 auto; padding-right: 25px; flex:1;'>
-                    <img style='max-height: 600px; max-width: 800px; vertical-align: middle; object-fit: contain;' src="/img/ComputerPortfolio.png">
-                </div>
-            </div>
-        </div>
 
-        <div class='separator-container'>
-            <div class='separator' style='margin-left: 0px; margin-right: 0px; width: 100%'></div>
-        </div>
-
-        <div class='header-container'>
-            <h2 class='header' style='text-align: left;'> Never miss a beat. </h2>
-        </div>
-
-        <div class='landing-container'>
-            <div style='display: flex; flex-direction: row;'>
-                <div style='flex:1;'>
-                    <h2 class='blurb' style='width: 100%; position:relative; margin: 0 auto; margin-top:25px; margin-bottom: 25px; max-width: 100%; max-height: 100%'>
-                        CoinScore was developed with the mindset that our users should be able to access all of the most useful information from the same platform.  The platform was carefully designed so that at any given interface, the user is fully aware of what is going on in the market.
-                    </h2>
-                    <h2 class='blurb' style='width: 100%; position:relative; margin: 0 auto; margin-top:25px; margin-bottom: 25px; max-width: 100%; max-height: 100%'>
-                        Machine learning algorithms leverage data collected from news sources, blog posts and social media outlets to allow users to observe market sentiment about specific digital assets while monitoring their portfolios.  Crypto relevant news items are streamed into the platform and always easily available.  
-                    </h2>
-                </div>
-                <div class='fit-image-container' style='line-height: 1; text-align: center; margin: 0 auto; padding-right: 25px; flex:1;'>
-                    <img style='max-height: 600px; max-width: 800px; vertical-align: middle; object-fit: contain;' src="/img/Placeholder.png">
-                </div>
-            </div>
-        </div>
-
-        <div class='landing-container' style='margin-top: 85px; position:relative; left:10px;'>
-            <div style='display: flex; flex-direction: row; width: 100%;'>
-                
-                <div class='contact-banner'>
-                    <div class='social-link-container'>
-                        <div style='margin: 0 auto; position:relative;'>
-                            <div style="display: flex; width: 440px; margin: 0 auto;">
-                                <a class='social-link' href="https://www.facebook.com/CoinScore-1989081324714541/">
-                                    <div><i class='social-link-icon fa fa-facebook'></i></div>
-                                </a>
-                                <a class='social-link' href="https://twitter.com/Coin_Score">
-                                    <div><i class='social-link-icon fa fa-twitter'></i></div>
-                                </a>
-                                <a class='social-link' href="https://www.linkedin.com/company/11320006/">
-                                    <div><i class='social-link-icon fa fa-linkedin'></i></div>
-                                </a>
-                                <a class='social-link' href="https://t.me/joinchat/Gsru4QxMGc04SejGBBafEA">
-                                    <div style='padding-top: 8px;'><img style='position:relative; left: -3px;' src="/img/Telegram.png"></div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class='contact-form' style='position:relative; width: 380px; margin: 0 auto; margin-top: 45px;'>
-                        <form>
-                            <input type="text" class="contact-input" placeholder="Contact name"> 
-                            <input type="email" class="contact-input" placeholder="Email address">
-                            <textarea class="contact-input"> </textarea>
-                            <button class='btn contact-submit' type="submit">Contact Us</button>
-                        </form>
-                    </div>
-                </div>
-
-                <div style='padding-right: 55px; margin-top: 5px; margin-bottom: 25px; margin-left: 60px; flex:1;'>
-                    <h2 class='blurb-header'>
-                        Pricing Tiers
+                <div style='padding-right: 55px; flex:1; margin-top: 35px;'>
+                    <h2 class='blurb-header' style='margin-bottom: 15px;'>
+                        Watchlist
                     </h2>
                     <h2 class='blurb' style='width: 100%; position:relative; margin: 0 auto; max-width: 100%; max-height: 100%'>
+                        Add assets and ICOs to your Watchlist to keep track of their progress over time.  Set specific limits and CoinScore will notify you on all of your devices.
+                    </h2>
+                </div>
+
+                <div style='padding-right: 55px; flex:1; margin-top: 25px;'>
+                    <h2 class='blurb-header' style='margin-bottom: 15px;'>
+                        News
+                    </h2>
+                    <h2 class='blurb' style='width: 100%; position:relative; margin: 0 auto; max-width: 100%; max-height: 100%'>
+                        Blockchain and cryptocurrency news is streamed directly into the platform from various news sources, allowing you to instantly see any new developments from any environment in the platform.
                     </h2>
                 </div>
 
             </div>
+            <div class='fit-image-container' style='line-height: 1; text-align: center; margin: 0 auto; padding-right: 25px; flex:1;'>
+                <img style='max-height: 600px; max-width: 800px; vertical-align: middle; object-fit: contain;' src="/img/IpadWatchlist.png">
+            </div>
         </div>
+    </div>
+</template>
 
-        <div class='footer'>
-            <div class='footer-container'>
-                
-                <div style='width: 30%;'>
-                    <div class='footer-logo-row'>
-                        <div class='footer-logo-container'>
-                            <img class="footer-logo" src="/img/Logo.png">
-                        </div> 
-                    </div>
-                    <div class='copyright'>
-                        Copyright © 2017 Alluminate All rights reserved.
+<template name="contact">
+    <div class='separator-container' id='contact-pivot'>
+        <div class='separator' style='margin-left: 0px; margin-right: 0px; width: 100%'></div>
+    </div>
+
+    <div class='header-container'>
+        <div style='display: flex'>
+            <div>
+                <h2 class='header' style='text-align: left;'> Have any questions? </h2>
+            </div>
+            <div class='social-link-container' style='flex-grow:100; margin-top: 25px;'>
+                <div style='position:relative; float:right;'>
+                    <div style="display: flex;">
+                        <a class='social-link' href="https://www.facebook.com/CoinScore-1989081324714541/">
+                            <div><i class='social-link-icon fa fa-facebook'></i></div>
+                        </a>
+                        <a class='social-link' href="https://twitter.com/Coin_Score">
+                            <div><i class='social-link-icon fa fa-twitter'></i></div>
+                        </a>
+                        <a class='social-link' href="https://www.linkedin.com/company/11320006/">
+                            <div><i class='social-link-icon fa fa-linkedin'></i></div>
+                        </a>
+                        <a class='social-link' href="https://t.me/joinchat/Gsru4QxMGc04SejGBBafEA">
+                            <div style='padding-top: 8px;'><img style='position:relative; left: -3px;' src="/img/Telegram.png"></div>
+                        </a>
                     </div>
                 </div>
-
-                <div class='footer-link-container' style='flex-grow: 100;'>
-                    <div style='float:right; margin-top: 10px;'>
-                        <div class='footer-link-wrap'><a class='footer-link'> Contact </a></div>
-                        <div class='footer-link-wrap'><a class='footer-link'> Hiring </a></div>
-                        <div class='footer-link-wrap'><a class='footer-link'> Disclaimer </a></div>
-                        <div class='footer-link-wrap'><a class='footer-link'> Privacy </a></div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </div>
 
-</template>    
+    <div class='landing-container' style='margin-top: 10px;'>
+        <div style='max-width: 400px; display:block;'>
+            <h2 class='contact-blurb' style='width: 100%; position:relative; margin-top:10px; margin-bottom: 25px;'>
+                Feel free to follow us on social media or contact us directly.  We will get back to you as soon as we can.
+            </h2>
+        
+            <div class='contact-form' style='position:relative; float:left; width: 100%; margin-top: 15px; display:block;'>
+                <form>
+                    <input type="text" class="contact-input" placeholder="Contact name" id="contact-name"> 
+                    <input type="email" class="contact-input" placeholder="Email address" id="contact-email">
+                    <textarea placeholder="Message" class="contact-input contact-message" id="contact-message"></textarea>
+                    <button id="contact-submit" class='btn contact-submit'>Contact Us</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</template>
+
+<template name="banner">
+    <div class='landing-banner' id='feature-pivot'>
+        <div class='landing-container'>
+            <div class='landing-banner-row'>
+                <div class='landing-banner-item'>
+                    <h2 class='banner-number'> 1517 </h2>
+                    <h2 class='banner-text'>Unique Coins Indexed</h2>
+                </div>
+                <div class='landing-banner-item'>
+                    <h2 class='banner-number'> 100 </h2>
+                    <h2 class='banner-text'>Scored Assets</h2>
+                </div>
+                <div class='landing-banner-item'>
+                    <h2 class='banner-number'> 19 </h2>
+                    <h2 class='banner-text'>Classified Sectors</h2>
+                </div>
+                <div class='landing-banner-item'>
+                    <h2 class='banner-number'> 37 </h2>
+                    <h2 class='banner-text'>Classified Sub Sectors</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="landingFooter">
+    <div class='footer'>
+        <div class='footer-container'>
+            
+            <div style='width: 30%;'>
+                <div class='footer-logo-row'>
+                    <div class='footer-logo-container'>
+                        <img class="footer-logo" src="/img/Logo.png">
+                    </div> 
+                </div>
+                <div class='copyright'>
+                    Copyright © 2017 Alluminate All rights reserved.
+                </div>
+            </div>
+
+            <div class='footer-link-container' style='flex-grow: 100;'>
+                <div style='float:right; margin-top: 10px;'>
+                    <div class='footer-link-wrap'><a class='footer-link'> Contact </a></div>
+                    <div class='footer-link-wrap'><a class='footer-link'> Hiring </a></div>
+                    <div class='footer-link-wrap'><a class='footer-link'> Disclaimer </a></div>
+                    <div class='footer-link-wrap'><a class='footer-link'> Privacy </a></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</template>
+
+
+        
