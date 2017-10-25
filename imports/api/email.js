@@ -43,11 +43,11 @@ Meteor.methods({
 
     // Let other method calls from the same client start running, without waiting for the email sending to complete.
     this.unblock();
-    Email.send({
-	  to: email,
-	  from: fromEmail,
-	  subject: subject,
-	  text: 'This user would like to sign up for CoinScore.',
+        Email.send({
+    	  to: email,
+    	  from: fromEmail,
+    	  subject: subject,
+    	  text: 'This user would like to sign up for CoinScore.',
 	});
 
   },
