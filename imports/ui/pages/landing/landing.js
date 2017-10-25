@@ -54,36 +54,8 @@ Template.landing.onRendered(function(){
 
 Template.beta.events({
 	'click .beta-close-button' : function(e, t){
-		if($('.landing-tagline-container').hasClass('landing-tagline-container-left')){
-			
-			$('.landing-tagline-container').addClass('bounce').queue(function(){
-			   $(this).removeClass('bounce'); 
-			   $(this).dequeue();
-			});
-
-			$('.landing-tagline-container').removeClass('landing-tagline-container-left')
-			$('.landing-tagline-container').addClass('landing-tagline-container-center')
-		}
-
-		if($('.landing-logo-container').hasClass('landing-logo-container-left')){
-
-			$('.landing-logo-container').addClass('bounce').queue(function(){
-			   $(this).removeClass('bounce'); 
-			   $(this).dequeue();
-			});
-
-			$('.landing-logo-container').removeClass('landing-logo-container-left')
-			$('.landing-logo-container').addClass('landing-logo-container-center')
-		}
-		$('.beta-form-container').animate({'right':"-400px"}, 300)
-
-			// $('.landing-logo-container').queue(function(){
-			// 	$('.beta-form-container').animate({'right':"-400px"}, 300)
-			// 	$(this).animate({'margin':"0 auto%"}, 300).delay(3).queue(function () {
-			// 		//$('.landing-tagline-container').animate({'margin':"0 auto"}, 300)
-			// 		$('.landing-tagline-container').addClass('landing-tagline-container-center')
-			// 	}).dequeue()
-			// })
+		$('.beta-form-container').removeClass('beta-form-showing')
+		$('.beta-form-container').addClass('beta-form-hidden')
 	}
 })
 
@@ -107,67 +79,14 @@ Template.landingHeader.events({
 	'click #try-beta' : function(e,t){
 		e.preventDefault()
 
-		if(! $('.landing-tagline-container').hasClass('landing-tagline-container-left')){
-
-			$('.landing-tagline-container').addClass('bounce').delay(200).queue(function(){
-			   $(this).removeClass('bounce'); 
-			   $(this).dequeue();
-			});
-
-			$('.landing-tagline-container').addClass('landing-tagline-container-left')
-			$('.landing-tagline-container').removeClass('landing-tagline-container-center')
+		if($('.beta-form-container').hasClass('beta-form-showing')){
+			$('.beta-form-container').removeClass('beta-form-showing')
+			$('.beta-form-container').addClass('beta-form-hidden')
 		}
 		else{
-			$('.landing-tagline-container').addClass('bounce').queue(function(){
-			   $(this).removeClass('bounce'); 
-			   $(this).dequeue();
-			});
-
-			$('.landing-tagline-container').removeClass('landing-tagline-container-left')
-			$('.landing-tagline-container').addClass('landing-tagline-container-center')
-		}
-
-		if(! $('.landing-logo-container').hasClass('landing-logo-container-left')){
-
-			$('.beta-form-container').removeClass('bounce')
-			$('.beta-form-container').addClass('bounce')
-			$('.beta-form-container').animate({'right':"15%"}, 300)
-
-			$('.landing-logo-container').addClass('bounce').delay(200).queue(function(){
-			   $(this).removeClass('bounce'); 
-			   $(this).dequeue();
-			});
-
-			$('.landing-logo-container').addClass('landing-logo-container-left')
-			$('.landing-logo-container').removeClass('landing-logo-container-center')
-		}
-		else{
-			
-			$('.beta-form-container').animate({'right':"-400px"}, 300)
-
-			$('.landing-logo-container').addClass('bounce').delay(200).queue(function(){
-			   $(this).removeClass('bounce'); 
-			   $(this).dequeue();
-			});
-
-			$('.landing-logo-container').removeClass('landing-logo-container-left')
-			$('.landing-logo-container').addClass('landing-logo-container-center')
-		}
-		
-
-		// if(! $('.landing-logo-container').hasClass('landing-logo-container-left')){
-		// 	$('.landing-logo-container').addClass('landing-logo-container-left')
-		// 	$('.beta-form-container').animate({'right':"15%"}, 300)
-
-			// $('.landing-logo-container').queue(function(){
-			// 	$('.beta-form-container').animate({'right':"15%"}, 300)
-			// 	$(this).animate({'marginLeft':"15%"}, 300).delay(3).queue(function () {
-			// 		//$('.landing-tagline-container').animate({'marginLeft':"18%"}, 300)
-			// 		$('.landing-tagline-container').addClass('landing-tagline-container-center')
-			// 		$('.landing-tagline-container').removeClass('landing-tagline-container-center')
-			// 	}).dequeue()
-			// })
-	    
+			$('.beta-form-container').addClass('beta-form-showing')
+			$('.beta-form-container').removeClass('beta-form-hidden')
+		}	    
 	}
 })
 
