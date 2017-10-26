@@ -59,18 +59,51 @@ Template.beta.events({
 	}
 })
 
+Template.beta.onRendered( function() {
+	$('#beta-form').validate(
+	    'rules':{
+	      'beta-email': {required: true, email: true},
+	      'beta-name': {required:true},
+	  	},
+	  	'messages':{
+	  		'beta-email': {required: 'You need to provide your email.', email: 'Please enter a valid email address.'},
+	     	'beta-name': {required:'Please provide us with a contact name for when we reach back to you.'},
+	  	}
+	)
+});
+
 Template.beta.events({
 	'click #beta-submit' : function(e,t){
 		e.preventDefault()
+		var signupData = {}
 
 		var fromEmail = $('#beta-email').val()
 		var fromName = $('#beta-name').val()
 
-		Meteor.call('sendSignupEmail', fromEmail, fromName, function(error,response){
-			if(error){
-				swal(error.reason,"Sorry, we couldn't submit your sign up request.  Please fix and try again.")
+		signupData.email = $('input[name="beta-email"]').val()
+		signupData.name = $('input[name="beta-name"]').val()
+
+		for(var i = 0; i<Object.keys(signupData).length; i++){
+			var keys = Object.keys(signupData)
+			if(signupData[keys[i]]){
+				signupData[keys[i]] = signupData[keys[i]].trim()
+			}
+		}
+
+		for(var i = 0; i<Object.keys(signupData).length; i++){
+			var keys = Object.keys(signupData)
+			if(!signupData[keys[i]] || signupData[keys[i]] == ""){
+				swal('error','There was a problem with your request form.  Please try again.')
 				return
 			}
+		}
+
+		Meteor.call('sendSignupEmail', signupData, function(error,response){
+			if(error){
+				swal(error.reason,"Sorry, we couldn't submit your signup request.  Please fix and try again.")
+				return
+			}
+			swal('Thank you for signing up!','We will contact you soon with more information about how to proceed.')
 		})
 	}
 })
@@ -78,6 +111,20 @@ Template.beta.events({
 Template.landingHeader.events({
 	'click #try-beta' : function(e,t){
 		e.preventDefault()
+
+		if(!$('.landing-header-content').hasClass('landing-header-content-with-beta-form')){
+			$('.landing-header-content').addClass('landing-header-content-with-beta-form')
+		}
+		else{
+			$('.landing-header-content').removeClass('landing-header-content-with-beta-form')
+		}
+
+		if(!$('.landing-button-cont').hasClass('landing-button-cont-with-beta-form')){
+			$('.landing-button-cont').addClass('landing-button-cont-with-beta-form')
+		}
+		else{
+			$('.landing-button-cont').removeClass('landing-button-cont-with-beta-form')
+		}
 
 		if($('.beta-form-container').hasClass('beta-form-showing')){
 			$('.beta-form-container').removeClass('beta-form-showing')
@@ -90,20 +137,51 @@ Template.landingHeader.events({
 	}
 })
 
+Template.contact.onRendered( function() {
+	$('#contact-form').validate(
+	    'rules':{
+	      'contact-email': {required: true, email: true},
+	      'contact-message': {required: true},
+	      'contact-name': {required:true},
+	  	},
+	  	'messages':{
+	  		'contact-email': {required: 'You need to provide your email.', email: 'Please enter a valid email address.'},
+	      	'contact-message': {required: 'Please provide a brief description of why you are contacting us.'},
+	     	'contact-name': {required:'Please provide us with a contact name for when we reach back to you.'},
+	  	}
+	)
+});
+
 Template.contact.events({
-	'click #contact-submit' : function(e,t){
+	'submit .contact-form' : function(e,t){
 		e.preventDefault()
+		var emailData = {}
 
-		var fromEmail = $('#contact-email').val()
-		var fromName = $('#contact-name').val()
-		var message = $('#contact-message').text()
+		emailData.email = $('input[name="contact-email"]').val()
+		emailData.name = $('input[name="contact-name"]').val()
+		emailData.message = $('#contact-message').val()
 
-		console.log('Email sending from : ',fromEmail,' from Name. ',fromName,' with message : ',message)
-		Meteor.call('sendContactEmail', fromEmail, fromName, message, function(error,response){
+		for(var i = 0; i<Object.keys(emailData).length; i++){
+			var keys = Object.keys(emailData)
+			if(emailData[keys[i]]){
+				emailData[keys[i]] = emailData[keys[i]].trim()
+			}
+		}
+
+		for(var i = 0; i<Object.keys(emailData).length; i++){
+			var keys = Object.keys(emailData)
+			if(!emailData[keys[i]] || emailData[keys[i]] == ""){
+				swal('error','There was a problem with your request form.  Please try again.')
+				return
+			}
+		}
+
+		Meteor.call('sendContactEmail', emailData, function(error,response){
 			if(error){
 				swal(error.reason,"Sorry, we couldn't submit your contact request.  Please fix and try again.")
 				return
 			}
+			swal('Thank you for your request.','We will contact you soon with a follow up regarding your inquiry.')
 		})
 	}
 

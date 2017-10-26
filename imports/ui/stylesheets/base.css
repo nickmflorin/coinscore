@@ -7,16 +7,38 @@ body {
   outline: 0;
   
   font-weight: 300 !important;
-  font-family: 'ProximaNova-Regular', sans-serif !important;
+  font-family: 'Trebuchet MS', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   text-shadow: none !important;
 }
 
-h1 { font-family: 'ProximaNova-Thin'; }
-h2 { font-family: 'ProximaNova-Light'; }
-h3 { font-family: 'ProximaNova-Regular'; }
-h4 { font-family: 'ProximaNova-Semibold'; }
-h5 { font-family: 'ProximaNova-Bold'; }
+h1 {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400 !important;
+}
+
+h2 {
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700 !important;
+}
+
+button, input[type="submit"] {
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700 !important;
+}
+
+p {
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
+}
 
 p {
   color: var(--offwhite-theme);
@@ -70,7 +92,7 @@ a:hover,a:focus {
 a.table-link {
   color: var(--blue);
   font-size: 12px !important;
-  font-family: "Roboto-Light", sans-serif !important;
+  font-family: 'Trebuchet MS', sans-serif !important;
 }
 a.table-link:hover, a.table-link:focus{
   color: var(--red) !important;
@@ -78,49 +100,11 @@ a.table-link:hover, a.table-link:focus{
 }
 
 label {
-  font-family: "Roboto-Regular", sans-serif !important;
+  font-family: 'Trebuchet MS', sans-serif !important;
   font-weight: 400;
   color: var(--offwhite-theme);
 }
 
-h1 {
-    font-size: 1.8rem;
-    line-height: 2.3rem;
-    font-weight: 400 !important;
-    -webkit-font-smoothing: antialiased;
-    text-shadow: none !important;
-    color: var(--offwhite-theme);
-}
-
-h2 {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    font-weight: 400 !important;
-    -webkit-font-smoothing: antialiased;
-    color: var(--offwhite-theme);
-}
-
-h3 {
-    font-weight: 700;
-    font-size: 1.125rem;
-    line-height: 1.5rem
-    color: var(--offwhite-theme);
-}
-
-h4 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-    margin-bottom: .5rem
-    color: var(--offwhite-theme);
-}
-
-h5 {
-    font-size: .8125rem;
-    font-weight: 700;
-    margin-bottom: 0;
-    text-transform: uppercase
-    color: var(--offwhite-theme);
-}
 h1 a,
 h1 a:active,
 h1 a:hover{

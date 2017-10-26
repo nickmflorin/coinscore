@@ -16,6 +16,7 @@ import '.././stylesheets/plugins/bootstrap-toggle/bootstrap-toggle.min.css';
 import '.././stylesheets/plugins/chartist/chartist.min.css';
 
 import '.././stylesheets/normalize.css';
+import '.././stylesheets/alert.css';
 
 import './application.html';
 import './nav.css';

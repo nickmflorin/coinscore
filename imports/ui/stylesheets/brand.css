@@ -11,7 +11,7 @@
 
   font-weight: 500;
   font-size: 15px;
-  font-family: 'ProximaNova-Regular', sans-serif !important;
+
 }
 
 .navbar-top-login .link {
@@ -24,19 +24,19 @@
   display: block;
   font-weight: 500;
   font-size: 15px;
-  font-family: 'ProximaNova-Regular', sans-serif !important;
+
 }
 
 .navbar-top-login .dropdown-menu {
   min-width: 135px;
   font-weight: 500;
   font-size: 15px;
-  font-family: 'ProximaNova-Regular', sans-serif !important;
+
 }
 
 .navbar-top-login .dropdown-menu .list-title {
   text-align: center;
-  font-family: 'ProximaNova-Regular', sans-serif !important;
+  
 }
 
 .navbar-top-login .dropdown-menu li {

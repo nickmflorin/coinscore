@@ -9,6 +9,7 @@
 
 .landing-container {
     max-width: 1500px;
+    min-width: 80%;
     margin: 0 auto;
     position: relative;
     display: flex;
@@ -16,6 +17,7 @@
 
 .separator-container {
   max-width: 1500px;
+    min-width: 80%;
   margin: 0 auto;
   position: relative;
   margin-top: 75px;
@@ -27,12 +29,34 @@
 .landing-container:not(:last-child){
   margin-bottom: 50px;
 }
-.landing-container:not(:last-child) div.column {
-  margin-bottom: 35px;
+
+.column{
+  margin-top: 0;
+  margin-bottom: 0;
+  flex:1;
 }
-.landing-container:not(:first-child) div.column {
-  margin-top: 35px;
+
+.left-column{
+  margin-right: auto;
+  margin-left: 115px;
+  padding-right: 50px;
 }
+
+.right-column{
+  margin-right: 115px;
+  margin-left: auto;
+  padding-left: 50px;
+}
+
+.column-image-container{
+  padding-top: 20px; 
+  padding-bottom:20px; 
+  line-height: 1; 
+  max-height: 100%; 
+  width: 100%;
+}
+
+
 .column .item:not(:first-child){
   margin-top: 25px;
 }
@@ -47,7 +71,13 @@
   object-fit: contain;
   height: auto;
   max-width: 100%;
-  /*max-height:calc(100% - 50px); */
+}
+
+.screenshot-restrict-height{
+  margin: 0 auto;
+  object-fit: contain;
+  max-height: 500px;
+  width: auto;
 }
 
 .landing-container-wide {
@@ -58,8 +88,9 @@
 
 .three-row-item-container{
   display: flex; 
-  max-width: 1400px;
   margin: 0 auto;
+  padding-left: 45px;
+  padding-right: 45px;
 }
 
 .three-row-item {
@@ -82,7 +113,7 @@
   height: 80px; 
   width: 80px; 
   position: relative; 
-  margin: auto;
+  margin: auto 70px;
 }
 .icon-image{
   max-height: 100%; 
@@ -128,6 +159,7 @@
 
 .landing-banner-row{
     display: flex;
+    margin: 0 auto;
 }
 
 .landing-banner-item {
@@ -154,21 +186,22 @@
     margin-top: 15px;
 }
 
-.landing-banner-item h2.banner-number {
+.banner-number {
     color: var(--offwhite-theme);
     border-top: none !important;
-    font-size: 45px;
+    font-size: 45px !important;
     text-align: center;
-    font-family: 'ProximaNovaT-Thin', sans-serif !important;
+
 }
 
-.landing-banner-item h2.banner-text {
+.banner-text {
     color: var(--offwhite-theme);
     border-top: none !important;
     margin-top: 25px;
-    font-size: 18px;
+    font-size: 18px !important;
     text-align: center;
-    font-family: 'ProximaNova-Bold', sans-serif !important;
+    font-weight: 400 !important;
+
 }
 
 

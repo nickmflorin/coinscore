@@ -26,3 +26,7 @@ email
 check
 patrickml:swal
 jquery
+audit-argument-checks
+browser-policy
+themeteorchef:jquery-validation
+meteorhacks:ssr

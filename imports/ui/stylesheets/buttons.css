@@ -7,7 +7,6 @@
     font-weight: 400 !important;
 
     -webkit-font-smoothing: antialiased;
-    font-family: 'Roboto-Regular', sans-serif !important;
 
     line-height: 1.2rem;
     padding: 7px 14px 7px 14px !important;
@@ -82,7 +81,7 @@
 }
 
 .btn-success {
-  font-family: "ProximaNova-Light" !important;
+
   border-radius: 1px !important;
   background-color: var(--yellow-theme) !important;
   color: var(--blackolive-theme) !important;
