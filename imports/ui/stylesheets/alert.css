@@ -58,3 +58,76 @@
     margin: 0;
     cursor: pointer;
 }
+
+#contact-email-error:before {
+    content: "\f071";
+    font-family: "FontAwesome";
+    color: var(--yellow-theme);
+    font-size: 12px !important;
+    margin-right: 10px;
+}
+
+#contact-name-error:before {
+    content: "\f071";
+    font-family: "FontAwesome";
+    color: var(--yellow-theme);
+    font-size: 12px !important;
+    margin-right: 10px;
+}
+
+#contact-message-error:before {
+    content: "\f071";
+    font-family: "FontAwesome";
+    color: var(--yellow-theme);
+    font-size: 12px !important;
+    margin-right: 10px;
+}
+
+#contact-message-error{
+  font-size: 12px !important;
+  margin-top: 10px;
+  color: rgba(255,231,97,1.0) !important;
+  
+}
+
+#contact-name-error{
+  font-size: 12px !important;
+  margin-top: 10px;
+  color: rgba(255,231,97,1.0) !important;
+ 
+}
+#contact-email-error{
+  font-size: 12px !important;
+  margin-top: 10px;
+  color: rgba(255,231,97,1.0) !important;
+
+}
+
+#beta-name-error:before {
+    content: "\f071";
+    font-family: "FontAwesome";
+    color: var(--yellow-theme);
+    font-size: 12px !important;
+    margin-right: 10px;
+}
+
+#beta-email-error:before {
+    content: "\f071";
+    font-family: "FontAwesome";
+    color: var(--yellow-theme);
+    font-size: 12px !important;
+    margin-right: 10px;
+}
+
+#beta-name-error{
+  font-size: 12px !important;
+  margin-top: 10px;
+  color: rgba(255,231,97,1.0) !important;
+
+}
+#beta-email-error{
+  font-size: 12px !important;
+  margin-top: 10px;
+  color: rgba(255,231,97,1.0) !important;
+
+}

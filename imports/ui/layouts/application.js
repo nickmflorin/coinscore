@@ -6,17 +6,18 @@ import { Template } from 'meteor/templating';
 import { $ } from 'meteor/jquery';
 import moment from 'moment';
 
-import '.././stylesheets/buttons.css';
-import '.././stylesheets/brand.css';
-import '.././stylesheets/base.css';
-import '.././stylesheets/root.css';
-
 import '.././stylesheets/plugins/font-awesome.min.css';
 import '.././stylesheets/plugins/bootstrap-toggle/bootstrap-toggle.min.css';
 import '.././stylesheets/plugins/chartist/chartist.min.css';
 
+import '.././stylesheets/base.css';
+import '.././stylesheets/root.css';
+import '.././stylesheets/buttons.css';
+import '.././stylesheets/brand.css';
+
 import '.././stylesheets/normalize.css';
 import '.././stylesheets/alert.css';
+import '.././stylesheets/responsive.css';
 
 import './application.html';
 import './nav.css';

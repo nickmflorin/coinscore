@@ -20,7 +20,7 @@
             </div>
             <div class='landing-tagline-row'>
                 <div class='landing-tagline-container landing-tagline-container-center'>
-                    <h1 class='landing-tagline'> Providing clarity for uncertain and volatile markets. </h1>
+                    <h1 class='landing-tagline'> Providing clarity for the digital asset class. </h1>
                 </div>
             </div>
 
@@ -35,17 +35,17 @@
 <template name="beta">
     <div class='beta-form-container beta-form-hidden'>
         <div class='beta-form' style='margin-top: 20px;'>
-            <div class='beta-close-container' style='height: 27px;'>
-                <button class='beta-close-button'> <i class='fa fa-times'></i> </button>
-            </div>
             <form id='beta-form'>
                 <div class="form-group" style='margin-bottom: 5px;'>
                     <input type="text" name='beta-name' class="beta-input required" placeholder="Contact name"> 
                 </div>
-                <div class="form-group" style='margin-bottom: 5px;'>
+                <div class="form-group" style='margin-bottom: 5px; margin-top: 15px;'>
                     <input type="email" name='beta-email' class="beta-input required email" placeholder="Email address"> 
                 </div>
-                <input type='submit' id="beta-submit" class='btn beta-submit' value='Submit'>
+                <div class='signup-button-container' style='display: flex'>
+                    <button type='button' class='btn beta-cancel'> Cancel </button>
+                    <input type='submit' id="beta-submit" class='btn beta-submit' value='Submit'>
+                </div>
             </form>
         </div>
     </div>
@@ -55,7 +55,7 @@
 <template name="landingContent">
     <div class='landing-container mission-container'>
         <h1 class='mission'>
-            While the digital asset class is introducing innovation into markets, it is also removing transparency.  CoinScore's purpose was to reduce the opaqueness in the cryptocurrency investment space while simultaneously improving investment outcomes for users. 
+            CoinScore's goal is simple: we want to make the digital asset market more transparent.  We know this platform will accomplish this by providing our users with the most elaborate data, analytical tools and expertise at their fingertips.  Gone are the days of sourcing data from many different locations... with CoinScore, you only need us.
         </h1>
     </div>
 
@@ -79,7 +79,7 @@
     </div>
 
     <div class='landing-container' style='display:flex; flex-direction:row;'>
-        <div class='column left-column' style='display:flex; flex-direction:column; margin-left: 45px !important;'>
+        <div class='column left-column' style='display:flex; flex-direction:column;'>
             <div class='item' style='display: flex; flex:1;'>
                 <div class='icon-container'>
                     <img class='icon-image' src="/img/Taxonomy.png">
@@ -116,7 +116,7 @@
         </div>
 
         <div class='column right-column column-image-container'>
-            <img class='screenshot' src="/img/ComputerIpadMain.png">
+            <img class='screenshot' src="/img/Detail.png">
         </div>
     </div>
 </template>
@@ -150,7 +150,12 @@
                 </div>
 
                 <div style='margin-top: 10px; width: 100%;'>
-                    <p class='item-text-center'> CoinScore will allow users to break down their crypto portfolio's allocation by numerous quantitative and taxonomical metrics.  Users can develop their own optimal allocations and monitor their portfolo's progress to or divergence from these strategic goals. </p>
+                    <p class='item-text-center'> CoinScore will allow users to break down their crypto portfolio's allocation by numerous quantitative and taxonomical metrics.  
+                    </p>
+                    <p class='item-text-center' style='margin-top: 15px;'>
+                        Users can develop their own optimal allocations and monitor their portfolo's progress to or divergence from these strategic goals. 
+                    </p>
+
                 </div>
             </div>
 
@@ -169,7 +174,10 @@
 
                 <div style='margin-top: 10px; width: 100%;'>
                     <p class='item-text-center'> 
-                        Our proprietary scoring models and built in expertise will drastically increase the transparency around ICOs and other digital assets.  CoinScore will allow users to be well informed about ICOs before and after any investment decisions are made.
+                        Our proprietary scoring models and built in expertise will drastically increase the transparency around ICOs and other digital assets.  
+                    </p>
+                    <p class='item-text-center' style='margin-top: 15px;'>
+                        CoinScore will allow users to be well informed about ICOs before and after any investment decisions are made.
                     </p>
                 </div>
             </div>
@@ -187,7 +195,10 @@
                     </div>
                 </div>
                 <div style='margin-top: 10px; width: 100%;'>
-                    <p class='item-text-center'> Users can effortlessly move from analysis to execution by executing trades through one of the available partnered exchange platforms.  From a single platform, users can compare activity and execute trades across several exchanges. 
+                    <p class='item-text-center'> Users can effortlessly move from analysis to execution by executing trades through one of the available partnered exchange platforms. 
+                    </p> 
+                    <p class='item-text-center' style='margin-top: 15px;'>
+                        From a single platform, users can compare activity and execute trades across several exchanges. 
                     </p>
                 </div>
             </div>
@@ -200,7 +211,7 @@
         <div style='display: flex; flex-direction: row;'>
 
             <div class='column left-column column-image-container'>
-                <img class='screenshot' src="/img/ComputerPortfolio.png">
+                <img class='screenshot' src="/img/Portfolio.png">
             </div>
 
             <div class='column right-column'>
@@ -267,7 +278,7 @@
         </div>
 
         <div class='column right-column column-image-container'>
-            <img class='screenshot' src="/img/ComputerPortfolio.png">
+            <img class='screenshot' src="/img/Sector.png">
         </div>
 
     </div>
@@ -275,7 +286,7 @@
 
 <template name="contact">
 
-    <div class='header-separator'>
+    <div class='header-separator' id='contact-pivot'>
         <div class='header-separator-container'>
             <div class='separator'></div>
             <div class='header-container' style='margin-left: 115px; margin-right: 115px;'>

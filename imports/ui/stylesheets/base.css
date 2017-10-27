@@ -26,22 +26,11 @@ h2 {
   font-weight: 700 !important;
 }
 
-button, input[type="submit"] {
-  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+p {
+  font-family: 'Roboto-Regular', sans-serif !important;
   font-style: normal;
   font-variant: normal;
-  font-weight: 700 !important;
-}
-
-p {
-  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 300;
-}
-
-p {
-  color: var(--offwhite-theme);
+  color: var(--gray-text);
 }
 
 .v-block {

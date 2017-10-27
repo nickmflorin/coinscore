@@ -4,10 +4,8 @@ import './register-api.js';
 
 Meteor.startup(function () {
   smtp = {
-    //username: 'info@alluminate.io', 
-    username: 'nickmflorin@gmail.com',
-    //password: '7CC&hXz*Ka5Ks3go#a#^ipmER^*Hh0@R',  
-    password: 'N1cholas!',
+    username: 'info@alluminate.io', 
+    password: '7CC&hXz*Ka5Ks3go#a#^ipmER^*Hh0@R',  
     server:   'smtp.gmail.com',  
     port: 465 // previously 465
   }

@@ -52,6 +52,20 @@ Template.landing.onRendered(function(){
 	});
 })
 
+function show_SignupForm(){
+	$('.landing-header-content').addClass('landing-header-content-with-beta-form')
+	$('.landing-button-cont').addClass('landing-button-cont-with-beta-form')
+	$('.beta-form-container').addClass('beta-form-showing')
+	$('.beta-form-container').removeClass('beta-form-hidden')
+}
+
+function hide_SignupForm(){
+	$('.landing-header-content').removeClass('landing-header-content-with-beta-form')
+	$('.landing-button-cont').removeClass('landing-button-cont-with-beta-form')
+	$('.beta-form-container').removeClass('beta-form-showing')
+	$('.beta-form-container').addClass('beta-form-hidden')
+}
+
 Template.beta.events({
 	'click .beta-close-button' : function(e, t){
 		$('.beta-form-container').removeClass('beta-form-showing')
@@ -73,7 +87,10 @@ Template.beta.onRendered( function() {
 });
 
 Template.beta.events({
-	'click #beta-submit' : function(e,t){
+	'click .beta-cancel' : function(e, t){
+		hide_SignupForm()
+	},
+	'submit #beta-form' : function(e,t){
 		e.preventDefault()
 		var signupData = {}
 
@@ -93,7 +110,7 @@ Template.beta.events({
 		for(var i = 0; i<Object.keys(signupData).length; i++){
 			var keys = Object.keys(signupData)
 			if(!signupData[keys[i]] || signupData[keys[i]] == ""){
-				swal('error','There was a problem with your request form.  Please try again.')
+				swal('Submission Error','There was a problem with submitting your contact information.  Please check the form and try again.')
 				return
 			}
 		}
@@ -103,6 +120,7 @@ Template.beta.events({
 				swal(error.reason,"Sorry, we couldn't submit your signup request.  Please fix and try again.")
 				return
 			}
+			hide_SignupForm()
 			swal('Thank you for signing up!','We will contact you soon with more information about how to proceed.')
 		})
 	}
@@ -111,29 +129,12 @@ Template.beta.events({
 Template.landingHeader.events({
 	'click #try-beta' : function(e,t){
 		e.preventDefault()
-
 		if(!$('.landing-header-content').hasClass('landing-header-content-with-beta-form')){
-			$('.landing-header-content').addClass('landing-header-content-with-beta-form')
+			show_SignupForm()
 		}
 		else{
-			$('.landing-header-content').removeClass('landing-header-content-with-beta-form')
+			hide_SignupForm()
 		}
-
-		if(!$('.landing-button-cont').hasClass('landing-button-cont-with-beta-form')){
-			$('.landing-button-cont').addClass('landing-button-cont-with-beta-form')
-		}
-		else{
-			$('.landing-button-cont').removeClass('landing-button-cont-with-beta-form')
-		}
-
-		if($('.beta-form-container').hasClass('beta-form-showing')){
-			$('.beta-form-container').removeClass('beta-form-showing')
-			$('.beta-form-container').addClass('beta-form-hidden')
-		}
-		else{
-			$('.beta-form-container').addClass('beta-form-showing')
-			$('.beta-form-container').removeClass('beta-form-hidden')
-		}	    
 	}
 })
 
@@ -171,7 +172,7 @@ Template.contact.events({
 		for(var i = 0; i<Object.keys(emailData).length; i++){
 			var keys = Object.keys(emailData)
 			if(!emailData[keys[i]] || emailData[keys[i]] == ""){
-				swal('error','There was a problem with your request form.  Please try again.')
+				swal('Submission Error','There was a problem with submitting your contact information.  Please check the form and try again.')
 				return
 			}
 		}

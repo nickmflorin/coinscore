@@ -82,11 +82,12 @@
 .menu-button{
   margin-left: 10px;
   color: var(--gray-text);
-
   font-size: 16px !important;
-  padding: 8px 12px 8px 12px !important;
-  line-height: 16px;
-  height: 32px !important;
+
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif !important;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400 !important;
 }
 
 #navbar-small-dropdown-menu{
@@ -94,25 +95,4 @@
   min-width:200px;
 }
 
-@media (max-width: 991px) {
-  #navbar-small-login{
-    display:inline-block;
-    margin-top:8px;
-  }
-  
-  #default-login{
-    display:none;
-  }
-}
-
-@media (min-width: 992px) {
-  #navbar-small-login{
-    display: none;
-  }
-  
-  #default-login{
-    margin-top: 12px;
-    display:inline-block;
-  }
-}
 

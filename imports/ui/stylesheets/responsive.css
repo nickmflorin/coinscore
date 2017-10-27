@@ -1,0 +1,80 @@
+/*================================================================================
+	Item Name: Kode
+	Description: Premium Bootstrap Admin Template
+	Author: Egemen Kapusuz
+	Author URL: http://www.themeforest.net/user/egemem
+================================================================================*/
+@media screen and (max-width: 1620px) {
+	.left-column{padding-left: 80px !important; padding-right: 35px !important;}
+	.right-column{padding-right: 80px !important; padding-left: 35px !important;}
+	.header-container{margin-left: 80px !important; margin-right: 80px !important;}
+}
+
+@media screen and (max-width: 1440px) {
+	.left-column{padding-left: 80px; padding-right: 35px;}
+	.right-column{padding-right: 80px; padding-left: 35px;}
+	.landing-content{position: absolute !important;}
+}
+
+/* =================================================================================
+smaller than 1280
+================================================================================= */
+@media screen and (max-width: 1280px) {
+	.signup-container{display: none !important;}
+}
+
+/* =================================================================================
+smaller than 1024
+================================================================================= */
+@media screen and (max-width: 1024px) {
+	.profilebox b{display: none;}
+	.searchform{display: none;}
+	.sidebar{display: none;}
+	.content{margin-left: 0 !important;}
+	.sidebar-open-button{display: none;}
+	.sidebar-open-button-mobile{display: block;}
+	.social-stats{bottom: 100px;}
+	.topstats li{width: 33%;}
+	.demo-sidebarmenu .sidebar{display: block;}
+}
+
+/* =================================================================================
+bigger than 1024 - This is preventing the animatiexwon of hiding/showing the sidebar.
+================================================================================= */
+/*@media screen and (min-width: 1024px) {
+	.sidebar{display: block !important;}
+}
+*/
+/* =================================================================================
+smaller than 760
+================================================================================= */
+@media screen and (max-width: 1024px) {
+	.signup-container{display: none;}
+	.landing-banner-item{width: 160px;}
+	.banner-text {font-size: 14px !important;}
+	.banner-number {font-size: 24px !important;}
+	.item-text-center {font-size: 14px !important;}
+	.item-text-left {font-size: 14px !important;}
+	.item-text-right {font-size: 14px !important;}
+	.blurb {font-size: 14px !important;}
+	.blurb-header-yellow{font-size: 20px !important;}
+	.blurb-header{font-size: 20px !important;}
+	.item-header{font-size:18px !important;}
+	.item-header-top-border{font-size:18px !important;}
+}
+
+/* =================================================================================
+smaller than 428
+================================================================================= */
+@media screen and (max-width: 428px) {
+	.navbar-top-login{display: none;}
+	.applogo{
+		padding-left: 0;
+		background: none;
+		display: block;
+		position: absolute;
+		width: 100%;
+		z-index: -4;
+	}
+	.topstats li{width: 100%;}
+}

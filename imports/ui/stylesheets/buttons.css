@@ -1,38 +1,41 @@
+button {
+  font-size: 14px !important;
+  font-family: 'Roboto-Light', sans-serif !important;
+  font-weight: 300 !important;
+
+  line-height: 16px !important;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+
+  padding-left: 14px !important;
+  padding-right: 14px !important;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-decoration: none;
+  cursor: pointer;
+  text-shadow: none;
+
+  border: none;
+  border-radius: .35rem;
+  box-shadow: none;
+
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+
+}
+
 .btn {
-    height: 32px;
     background: var(--blue);
     color: #fff;
-  
-    font-size: 14px !important;
-    font-weight: 400 !important;
-
-    -webkit-font-smoothing: antialiased;
-
-    line-height: 1.2rem;
-    padding: 7px 14px 7px 14px !important;
-
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-
-    user-select: none;
-    text-decoration: none;
-    cursor: pointer;
-    text-shadow: none;
-
-    border: none;
-    border-radius: .35rem;
-    box-shadow: none;
-
+    
     position: relative;
     display: inline-block;
-    vertical-align: bottom;
     text-align: center;
     white-space: nowrap;
     margin: 0;
-
-    -webkit-appearance: none;
-    -webkit-tap-highlight-color: transparent;
 }
 
 .btn:after {
@@ -48,18 +51,12 @@
   color: var(--secondary-text-color);
 }
 
-/* ================================================
-  Panel Buttons
-================================================ */
 .top-right-button {
   position: absolute;
   top: 10px;
   right: 10px;
 }
 
-/* ================================================
-  Custom Bootstrap Overrides
-================================================ */
 .btn-primary {
   background-color: var(--blue) !important;
   color: #FFF  !important;

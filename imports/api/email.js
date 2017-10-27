@@ -11,7 +11,6 @@ import { Email } from 'meteor/email'
 
 // Need to put in more secure location
 var email = 'info@alluminate.io'
-//var email = 'nickmflorin@gmail.com'
 
 Date.prototype.yyyymmdd = function() {
   var mm = this.getMonth() + 1; // getMonth() is zero-based
@@ -40,9 +39,6 @@ Meteor.methods({
       }
       throw new Meteor.Error('input-error','Error: The following fields were invalid: ' + invalidFields.join(', '))
     }
-
-    console.log('Sending Signup Request from : ',signupData.email)
-    console.log('Contact Name : ',signupData.name)
 
     var sendDate = new Date()
     var subject = 'coinscore-beta-signup-request_' +  sendDate.yyyymmdd()
@@ -76,10 +72,6 @@ Meteor.methods({
       }
       throw new Meteor.Error('input-error','Error: The following fields were invalid: ' + invalidFields.join(', '))
     }
-
-    console.log('Sending Email from : ',emailData.email)
-    console.log('Contact Name : ',emailData.name)
-    console.log('Message : ',emailData.message)
 
     var sendDate = new Date()
     var subject = 'coinscore-info-request_' +  sendDate.yyyymmdd()

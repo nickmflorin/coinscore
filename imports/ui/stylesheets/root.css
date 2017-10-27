@@ -1,6 +1,3 @@
-/* ================================================
-  Colors
-================================================ */
 :root {
     --landing-separator : #eef1fb;
 
@@ -26,166 +23,100 @@
     --orange-theme-hex : #eea254;
     --orange-theme-hover : rgba(238,162,84,0.6); 
 
-    --gray-text : #bbb8b8;
+    --gray-text : #ddd;
     --primary-text-color : var(--blackolive-theme);
     --secondary-text-color : #6f6f6f;
 }
 
-
-/* ================================================
-  Fonts
-================================================ */
-@font-face {
-    font-family: "Aileron-Bold";
-    src: local('Aileron-Bold'), url("Aileron-Bold.ttf") format('truetype');
-}
-@font-face {
-    font-family: "Aileron-BoldItalic";
-    src: local('Aileron-BoldItalic'), url("Aileron-BoldItalic.ttf") format('truetype');
-}
-@font-face {
-    font-family: "Aileron-Italic";
-    src: local('Aileron-Italic'), url("Aileron-Italic.ttf") format('truetype');
-}
-@font-face {
-    font-family: "Aileron-Light";
-    src: local('Aileron-Light'), url("Aileron-Light.ttf") format('truetype');
-}
-@font-face {
-    font-family: "Aileron-Regular";
-    src: local('Aileron-Regular'), url("Aileron-Regular.ttf") format('truetype');
-}
-@font-face {
-    font-family: "Aileron-Thin";
-    src: local('.Aileron-Thin'), url("Aileron-Thin.ttf") format('truetype');
-}
-@font-face {
-    font-family: "Aileron-SemiBold";
-    src: local('Aileron-SemiBold'), url("Aileron-SemiBold.ttf") format('truetype');
-}
-
 @font-face {
     font-family: "RobotoCondensed-Bold";
-    src: local('RobotoCondensed-Bold'), url("RobotoCondensed-Bold.ttf") format('truetype');
+    src: local('/font/RobotoCondensed-Bold'), url("./font/RobotoCondensed-Bold.ttf") format('truetype');
 }
 @font-face {
     font-family: "RobotoCondensed-BoldItalic";
-    src: local('RobotoCondensed-BoldItalic'), url("RobotoCondensed-BoldItalic.ttf") format('truetype');
+    src: local('/font/RobotoCondensed-BoldItalic'), url("./font/RobotoCondensed-BoldItalic.ttf") format('truetype');
 }
 @font-face {
     font-family: "RobotoCondensed-Italic";
-    src: local('RobotoCondensed-Italic'), url("RobotoCondensed-Italic.ttf") format('truetype');
+    src: local('/font/RobotoCondensed-Italic'), url("./font/RobotoCondensed-Italic.ttf") format('truetype');
 }
 @font-face {
     font-family: "RobotoCondensed-Light";
-    src: local('RobotoCondensed-BoldItalic'), url("RobotoCondensed-BoldItalic.ttf") format('truetype');
+    src: local('/font/RobotoCondensed-BoldItalic'), url("./font/RobotoCondensed-BoldItalic.ttf") format('truetype');
 }
 
 @font-face {
     font-family: "RobotoCondensed-Regular";
-    src: local('RobotoCondensed-Regular'), url("RobotoCondensed-Regular.ttf") format('truetype');
+    src: local('/font/RobotoCondensed-Regular'), url("./font/RobotoCondensed-Regular.ttf") format('truetype');
 }
 
 @font-face {
     font-family: "Roboto-Regular";
-    src: local('Roboto-Regular'), url("Roboto-Regular.ttf") format('truetype');
+    src: local('/font/Roboto-Regular'), url("./font/Roboto-Regular.ttf") format('truetype');
 }
 @font-face {
     font-family: "Roboto-BoldItalic";
-    src: local('Roboto-BoldItalic'), url("Roboto-BoldItalic.ttf") format('truetype');
+    src: local('/font/Roboto-BoldItalic'), url("./font/Roboto-BoldItalic.ttf") format('truetype');
 }
 @font-face {
     font-family: "Roboto-Italic";
-    src: local('Roboto-Italic'), url("Roboto-Italic.ttf") format('truetype');
+    src: local('/font/Roboto-Italic'), url("./font/Roboto-Italic.ttf") format('truetype');
 }
 @font-face {
     font-family: "Roboto-Light";
-    src: local('Roboto-Light'), url("Roboto-Light.ttf") format('truetype');
+    src: local('/font/Roboto-Light'), url("./font/Roboto-Light.ttf") format('truetype');
 }
 
 @font-face {
     font-family: "Roboto-Regular";
-    src: local('Roboto-Regular'), url("Roboto-Regular.ttf") format('truetype');
+    src: local('/font/Roboto-Regular'), url("./font/Roboto-Regular.ttf") format('truetype');
 }
 @font-face {
     font-family: "Roboto-Thin";
-    src: local('Roboto-Thin'), url("Roboto-Thin.ttf") format('truetype');
+    src: local('/font/Roboto-Thin'), url("./font/Roboto-Thin.ttf") format('truetype');
 }
 @font-face {
     font-family: "Roboto-Medium";
-    src: local('Roboto-Medium'), url("Roboto-Medium.ttf") format('truetype');
+    src: local('/font/Roboto-Medium'), url("./font/Roboto-Medium.ttf") format('truetype');
 }
 
 @font-face {
     font-family: "ProximaNova-Regular";
-    src: local('ProximaNova-Regular'), url("ProximaNova-Regular") format('truetype');
+    src: local('/font/ProximaNova-Regular'), url("./font/ProximaNova-Regular") format('truetype');
 }
 
-@font-face {
-    font-family: "ProximaNova-Bold";
-    src: local('ProximaNova-Bold'), url("ProximaNova-Bold") format('truetype');
+::-webkit-scrollbar {
+      width: 8px !important;
+      height: 8px !important;
+      background-color: rgba(0,0,0,0);
+      -webkit-border-radius: 100px;
+}
+::-webkit-scrollbar:hover {
+    background-color: rgba(0, 0, 0, 0.09);
+}
+ 
+::-webkit-scrollbar-thumb:horizontal {
+      background: rgba(0,0,0,0.5);
+      -webkit-border-radius: 100px;
+      background-clip: padding-box;
+      border: 2px solid rgba(0, 0, 0, 0);
+      height: 8px !important;
+}
+::-webkit-scrollbar-thumb:vertical {
+      background: rgba(0,0,0,0.5);
+      -webkit-border-radius: 100px;
+      background-clip: padding-box;
+      border: 2px solid rgba(0, 0, 0, 0);
+      width: 8px !important;
 }
 
-@font-face {
-    font-family: "ProximaNova-Thin";
-    src: local('ProximaNova-Thin'), url("./ProximaNova-Thin") format('truetype');
+::-webkit-scrollbar-thumb:active {
+  background: rgba(0,0,0,0.61);
+  -webkit-border-radius: 100px;
 }
 
-@font-face {
-    font-family: "ProximaNova-SemiBold";
-    src: local('ProximaNovaCondensed-SemiBold'), url("ProximaNovaCondensed-SemiBold") format('truetype');
-}
-
-/* ================================================
-  Plugins
-================================================ */
-/* Bootstrap Main Css File (unedited) */
-@import url('plugins/bootstrap.css');
-
-@import url('plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css');
-@import url('plugins/bootstrap-select/bootstrap-select.css');
-@import url('plugins/bootstrap-toggle/bootstrap-toggle.min.css');
-
-/* Bootstrap wysihtml5 */
-@import url('plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.css');
-
-/* Summernote */
-@import url('plugins/summernote/summernote.css');
-@import url('plugins/summernote/summernote-bs3.css');
-
-/* Sweet Alert */
-@import url('plugins/sweet-alert/sweet-alert.css');
-@import url('plugins/datatables/datatables.css');
-
-/* Chartist */
-@import url('plugins/chartist/chartist.min.css');
-
-/* Rickshaw */
-@import url('plugins/rickshaw/rickshaw.css');
-@import url('plugins/rickshaw/detail.css');
-@import url('plugins/rickshaw/graph.css');
-@import url('plugins/rickshaw/legend.css');
-
-@import url('plugins/date-range-picker/daterangepicker-bs3.css');
-@import url('plugins/fullcalendar/fullcalendar.css');
-
-@import url('/charts.css');
-@import url('/icons.css');
-@import url('loading.css');
-@import url('buttons.css');
-@import url('tooltip.css');
-@import url('search.css');
-@import url('tables.css');
-
-@import url('brand.css');
-@import url('base.css');
-
-@import url('responsive.css');
-
-
-@import url('plugins/font-awesome.min.css');
-
-
+html {-webkit-font-smoothing: antialiased;}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and ( min-device-pixel-ratio: 1.25), only screen and ( min-resolution: 200dpi), only screen and ( min-resolution: 1.25dppx) {     -webkit-font-smoothing: subpixel-antialiased; } 
 
 
 
