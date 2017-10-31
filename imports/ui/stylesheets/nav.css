@@ -59,7 +59,7 @@
   margin: 0 !important;
 
   font-weight: 500;
-  font-size: 15px;
+  font-size: 16px;
 
 }
 
@@ -82,8 +82,6 @@
 .menu-button{
   margin-left: 10px;
   color: var(--gray-text);
-  font-size: 16px !important;
-
   font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif !important;
   font-style: normal;
   font-variant: normal;

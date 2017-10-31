@@ -36,10 +36,10 @@
     <div class='beta-form-container beta-form-hidden'>
         <div class='beta-form' style='margin-top: 20px;'>
             <form id='beta-form'>
-                <div class="form-group" style='margin-bottom: 5px;'>
+                <div class="form-group beta-form-group">
                     <input type="text" name='beta-name' class="beta-input required" placeholder="Contact name"> 
                 </div>
-                <div class="form-group" style='margin-bottom: 5px; margin-top: 15px;'>
+                <div class="form-group beta-form-group">
                     <input type="email" name='beta-email' class="beta-input required email" placeholder="Email address"> 
                 </div>
                 <div class='signup-button-container' style='display: flex'>
@@ -73,12 +73,12 @@
         <div class='header-separator-container'>
             <div class='separator'></div>
             <div class='header-container'>
-                <h1 class='header' style='width: 700px;'> Technical expertise built directly into the platform. </h1>
+                <h1 class='header-center' style='width: 700px;'> Technical expertise built directly into the platform. </h1>
             </div>
         </div>
     </div>
 
-    <div class='landing-container' style='display:flex; flex-direction:row;'>
+    <div class='landing-container flex-alternate'>
         <div class='column left-column' style='display:flex; flex-direction:column;'>
             <div class='item' style='display: flex; flex:1;'>
                 <div class='icon-container'>
@@ -127,13 +127,13 @@
         <div class='header-separator-container'>
             <div class='separator'></div>
             <div class='header-container'>
-                <h1 class='header' style='width: 660px;'> Portfolio management for a new age asset class.  </h1>
+                <h1 class='header-center' style='width: 660px;'> Portfolio management for a new age asset class.  </h1>
             </div>
         </div>
     </div>
 
     <div class='landing-container'>
-        <div class='three-row-item-container'>
+        <div class='three-row-item-container flex-alternate'>
 
             <div class='three-row-item'>
                 <div class='icon-container' style='margin: 0 auto !important;'>
@@ -144,7 +144,7 @@
                     <div class='header-separator-container'>
                         <div class='separator'></div>
                         <div class='header-container'>
-                            <h2 class='item-header-top-border' style='width: 170px;'> Asset Allocation  </h2>
+                            <h2 class='item-header-top-border asset-alloc-header'> Asset Allocation  </h2>
                         </div>
                     </div>
                 </div>
@@ -152,7 +152,7 @@
                 <div style='margin-top: 10px; width: 100%;'>
                     <p class='item-text-center'> CoinScore will allow users to break down their crypto portfolio's allocation by numerous quantitative and taxonomical metrics.  
                     </p>
-                    <p class='item-text-center' style='margin-top: 15px;'>
+                    <p class='item-text-center' style='margin-top: 25px;'>
                         Users can develop their own optimal allocations and monitor their portfolo's progress to or divergence from these strategic goals. 
                     </p>
 
@@ -167,7 +167,7 @@
                     <div class='header-separator-container'>
                         <div class='separator'></div>
                         <div class='header-container'>
-                            <h2 class='item-header-top-border' style='width: 185px;'>Risk Management  </h2>
+                            <h2 class='item-header-top-border risk-mgmt-header'>Risk Management  </h2>
                         </div>
                     </div>
                 </div>
@@ -176,7 +176,7 @@
                     <p class='item-text-center'> 
                         Our proprietary scoring models and built in expertise will drastically increase the transparency around ICOs and other digital assets.  
                     </p>
-                    <p class='item-text-center' style='margin-top: 15px;'>
+                    <p class='item-text-center' style='margin-top: 25px;'>
                         CoinScore will allow users to be well informed about ICOs before and after any investment decisions are made.
                     </p>
                 </div>
@@ -190,14 +190,14 @@
                     <div class='header-separator-container'>
                         <div class='separator'></div>
                         <div class='header-container'>
-                            <h2 class='item-header-top-border' style='width: 210px;'>Trading Integration </h2>
+                            <h2 class='item-header-top-border trading-int-header'>Trading Integration </h2>
                         </div>
                     </div>
                 </div>
                 <div style='margin-top: 10px; width: 100%;'>
                     <p class='item-text-center'> Users can effortlessly move from analysis to execution by executing trades through one of the available partnered exchange platforms. 
                     </p> 
-                    <p class='item-text-center' style='margin-top: 15px;'>
+                    <p class='item-text-center' style='margin-top: 25px;'>
                         From a single platform, users can compare activity and execute trades across several exchanges. 
                     </p>
                 </div>
@@ -208,14 +208,14 @@
 
 <template name="transparency">
     <div class='landing-container' style='margin-top: 85px;'>
-        <div style='display: flex; flex-direction: row;'>
+        <div class='flex-alternate'>
 
             <div class='column left-column column-image-container'>
                 <img class='screenshot' src="/img/Portfolio.png">
             </div>
 
             <div class='column right-column'>
-                <div style='padding-left: 0px; padding-right: 50px; margin: 0 auto;'>
+                <div class='transparency-container'>
                     <h2 class='blurb-header-yellow'>
                         Transparency
                     </h2>
@@ -237,20 +237,21 @@
     <div class='header-separator'>
         <div class='header-separator-container'>
             <div class='separator'></div>
-            <div class='header-container' style='margin-left: 115px; margin-right: 115px;'>
-                <h1 class='header-left' style='width: 255px;'> Never miss a beat.  </h1>
+            <div class='header-container'>
+                <h1 class='header-left beat-header'> Never miss a beat.  </h1>
             </div>
         </div>
     </div>
 
-    <div class='landing-container' style='display:flex; flex-direction:row; margin-top: 20px;'>
-        <div class='column left-column' style='display:flex; flex-direction:column;'>
-<!--             <p class='blurb' style='padding-top:10px; padding-bottom: 25px;'>
-                CoinScore was developed with the mindset that our users should be able to access all of the most useful information from the same platform.  The platform was carefully designed so that at any given interface, the user is fully aware of what is going on in the market.
-            </p> -->
+    <div class='landing-container flex-reverse-alternate'  style='margin-top: 20px;'>
 
+        <div class='column right-column column-image-container'>
+            <img class='screenshot' src="/img/Sector.png">
+        </div>
+
+        <div class='column left-column' style='display:flex; flex-direction:column;'>
             <div style='flex:1;'>
-                <h2 class='blurb-header-yellow' style='margin-bottom: 15px;'>
+                <h2 class='blurb-header-yellow'>
                     Sentiment
                 </h2>
                 <p class='blurb blurb-left'>
@@ -259,7 +260,7 @@
             </div>
 
             <div style='flex:1;'>
-                <h2 class='blurb-header-yellow' style='margin-bottom: 15px;'>
+                <h2 class='blurb-header-yellow'>
                     Watchlist
                 </h2>
                 <p class='blurb blurb-left'>
@@ -268,7 +269,7 @@
             </div>
 
             <div style='flex:1;'>
-                <h2 class='blurb-header-yellow' style='margin-bottom: 15px;'>
+                <h2 class='blurb-header-yellow'>
                     News
                 </h2>
                 <p class='blurb blurb-left'>
@@ -276,11 +277,6 @@
                 </p>
             </div>
         </div>
-
-        <div class='column right-column column-image-container'>
-            <img class='screenshot' src="/img/Sector.png">
-        </div>
-
     </div>
 </template>
 
@@ -289,16 +285,35 @@
     <div class='header-separator' id='contact-pivot'>
         <div class='header-separator-container'>
             <div class='separator'></div>
-            <div class='header-container' style='margin-left: 115px; margin-right: 115px;'>
-                <h1 class='header-left' style='width: 285px;'> Have any questions?  </h1>
+            <div class='header-container'>
+                <h1 class='header-left questions-header'> Have any questions?  </h1>
             </div>
         </div>
     </div>
     <div class='landing-container' style='margin-top: 10px;'>
     
-        <div style='display: flex; width: 100%;'>
+        <div class='flex-reverse-alternate'>
 
-            <div class='column left-column' style='max-width: 600px; display:block;'>
+            <div class='column right-column social-link-container'>
+                <div class='social-links'>
+                    <div style="display: flex;">
+                        <a class='social-link' href="https://www.facebook.com/CoinScore-1989081324714541/">
+                            <div><i class='social-link-icon fa fa-facebook'></i></div>
+                        </a>
+                        <a class='social-link' href="https://twitter.com/Coin_Score">
+                            <div><i class='social-link-icon fa fa-twitter'></i></div>
+                        </a>
+                        <a class='social-link' href="https://www.linkedin.com/company/11320006/">
+                            <div><i class='social-link-icon fa fa-linkedin'></i></div>
+                        </a>
+                        <a class='social-link' href="https://t.me/joinchat/Gsru4QxMGc04SejGBBafEA">
+                            <div style='padding-top: 8px;'><img style='position:relative; left: -3px;' src="/img/Telegram.png"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class='column left-column contact-column'>
                 <h1 class='contact-blurb' style='width: 100%; position:relative; margin-top:10px; margin-bottom: 25px;'>
                     Feel free to follow us on social media or contact us directly.  We will get back to you as soon as we can.
                 </h1>
@@ -318,24 +333,7 @@
              
             </div>
 
-            <div class='column right-column social-link-container' style='margin-top: 0px; position:relative; bottom: 25px;'>
-                <div style='position:relative; float:right;'>
-                    <div style="display: flex;">
-                        <a class='social-link' href="https://www.facebook.com/CoinScore-1989081324714541/">
-                            <div><i class='social-link-icon fa fa-facebook'></i></div>
-                        </a>
-                        <a class='social-link' href="https://twitter.com/Coin_Score">
-                            <div><i class='social-link-icon fa fa-twitter'></i></div>
-                        </a>
-                        <a class='social-link' href="https://www.linkedin.com/company/11320006/">
-                            <div><i class='social-link-icon fa fa-linkedin'></i></div>
-                        </a>
-                        <a class='social-link' href="https://t.me/joinchat/Gsru4QxMGc04SejGBBafEA">
-                            <div style='padding-top: 8px;'><img style='position:relative; left: -3px;' src="/img/Telegram.png"></div>
-                        </a>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </div>
 </template>
@@ -369,7 +367,7 @@
     <div class='footer'>
         <div class='footer-container'>
             
-            <div style='width: 30%;'>
+            <div class='footer-left'>
                 <div class='footer-logo-row'>
                     <div class='footer-logo-container'>
                         <img class="footer-logo" src="/img/Logo.png">

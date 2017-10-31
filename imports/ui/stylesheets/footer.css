@@ -2,6 +2,9 @@
     width: 100%;
     text-align: left;
 }
+.footer-left{
+    width: 30%;
+}
 .footer-logo-container{
     max-height: 40px;
     margin: 0 auto;

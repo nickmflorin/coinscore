@@ -17,10 +17,20 @@ import '.././stylesheets/brand.css';
 
 import '.././stylesheets/normalize.css';
 import '.././stylesheets/alert.css';
+
+import '.././stylesheets/nav.css';
+import '.././stylesheets/text.css';
+import '.././stylesheets/header.css';
+import '.././stylesheets/landing.css';
+import '.././stylesheets/footer.css';
+import '.././stylesheets/contact.css';
+
+// Import Responsive Last
 import '.././stylesheets/responsive.css';
 
+
 import './application.html';
-import './nav.css';
+
 
 Template.application.helpers({
    isAClientPage : function(c, o) {

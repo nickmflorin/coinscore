@@ -242,3 +242,10 @@
    -o-transition: 0.2s ease-in-out;
    transition: 0.2s ease-in-out;
 }
+
+.beta-form-group{
+  margin-bottom: 5px;
+}
+.beta-form-group:not(:first-child){
+  margin-top: 15px;
+}

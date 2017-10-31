@@ -42,6 +42,19 @@
 
 .social-link-container {
 	float:right;
+  margin-top: 0px; 
+  position:relative; 
+  bottom: 25px;
+}
+
+.social-links{
+  position:relative; 
+  float:right;
+}
+
+.contact-column{
+  max-width: 600px; 
+  display:block;
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */

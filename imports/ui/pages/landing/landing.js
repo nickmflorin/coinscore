@@ -4,11 +4,6 @@ import { Template } from 'meteor/templating';
 import $ from 'jquery';
 
 import './landing.html';
-import './landing.css';
-import './header.css';
-import './text.css';
-import './contact.css';
-import './footer.css';
 
 import { Email } from 'meteor/email'
 import swal from 'sweetalert'
